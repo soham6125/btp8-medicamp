@@ -1,0 +1,446 @@
+{
+  "depression": [
+    {
+      "id": 0,
+      "question": "Difficulty focusing on everyday tasks",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Finding no joy in life, or feeling like you never will again",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Being lethargic or having no energy",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Eating too much, or too little",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Being full of nervous energy, or moving much less than usual",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Oversleeping, or struggling to get to sleep",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Being harsh on yourself or overly self-critical",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Feeling low or \"under a cloud\"",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Considering harming yourself, or committing suicide",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Headaches, cramps, aches, or pains that won't go away",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Loss of interest or pleasure in things you previously found enjoyable",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Feeling angry, irritable, or frustrated, even over small matters",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Slowed thinking, speaking, or body movements",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "anxiety": [
+    {
+      "id": 0,
+      "question": "I've been unable to stay in one place - like sitting down - for any length of time",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "I've been very concerned about several things at one time",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "I've been agitated, tense, or skittish",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "I've been unable to feel calm or relaxed",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "I've struggled to control feelings of anxiety, agitation, or fear",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "I've felt bad-tempered, irritable, or moody",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "I've been afraid or panicky about bad things that might happen to myself or others",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Some of the time",
+          "score": 1
+        },
+        {
+          "answer": "Most of the time",
+          "score": 2
+        },
+        {
+          "answer": "Nearly all of the time",
+          "score": 3
+        }
+      ]
+    }
+  ]
+}
