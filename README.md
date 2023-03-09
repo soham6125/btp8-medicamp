@@ -1,6 +1,7 @@
 # btp8-medicamp
 
-```+---src
+```
++---src
 |   +---main
 |   |   +---java
 |   |   |   \---com
