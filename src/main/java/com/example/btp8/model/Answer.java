@@ -17,14 +17,15 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotNull
-    private long userID;
-    @NotNull
-    private Integer submissionID;
+    private Long userID;
     @NotNull
     private String category;
     @NotNull
-    private String option;
+    private Long score;
     @NotNull
-    private Timestamp createdAt;
+    private Long maxScore;
+    @NotNull
+    private Long createdAt;
+
 }
 
