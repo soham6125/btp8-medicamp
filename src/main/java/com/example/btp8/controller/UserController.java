@@ -2,7 +2,6 @@ package com.example.btp8.controller;
 
 import com.example.btp8.model.Login;
 import com.example.btp8.model.User;
-import com.example.btp8.service.LoginService;
 import com.example.btp8.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,12 +17,10 @@ import java.util.*;
 public class UserController {
 
     private final UserService userService;
-    private final LoginService loginService;
 
     @Autowired
-    public UserController(UserService userService, LoginService loginService) {
+    public UserController(UserService userService) {
         this.userService = userService;
-        this.loginService = loginService;
     }
 
     @GetMapping("/health")
@@ -66,7 +63,7 @@ public class UserController {
 
     @PostMapping("/user/login")
     public ResponseEntity<User> login(@Valid @RequestBody Login loginBody) throws Exception {
-        return ResponseEntity.status(HttpStatus.OK).body(loginService.verifyUserLogin(loginBody));
+        return ResponseEntity.status(HttpStatus.OK).body(userService.verifyUserLogin(loginBody));
     }
 
 }

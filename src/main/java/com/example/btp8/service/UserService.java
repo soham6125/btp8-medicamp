@@ -1,5 +1,6 @@
 package com.example.btp8.service;
 
+import com.example.btp8.model.Login;
 import com.example.btp8.model.User;
 import com.example.btp8.repository.UserRepository;
 import com.example.btp8.utils.utils;
@@ -45,21 +46,26 @@ public class UserService {
     }
 
     public User addUser(@Valid User user) throws Exception {
+
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
         if (checkUser.isPresent()){
             throw new Exception("User with this email ID already exists");
         }
+
         String contact = user.getContact();
         Optional<User> checkUserContact = userRepository.findUserByContact(contact);
         if (checkUserContact.isPresent()){
             throw new Exception("User with this contact number already exists");
         }
+
         UUID randomUUID = UUID.randomUUID();
         String tokenID = randomUUID.toString().replaceAll("-", "");
+        user.setToken(tokenID);
+
         int age = between(user.getDob(), LocalDate.now()).getYears();
         user.setAge(age);
-        user.setToken(tokenID);
+
         String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
 //        System.out.println(currentTimestamp);
         String hashPassword = utils.get_SHA_512_SecurePassword(user.getPassword(), currentTimestamp);
@@ -70,32 +76,39 @@ public class UserService {
     }
 
     public User deleteUser(Long id) throws Exception {
+
         Optional<User> user = userRepository.findById(id);
         if (user.isEmpty()) {
             throw new Exception("User with given ID does not exist");
         }
+
         User currentUser = user.get();
         userRepository.delete(currentUser);
         return currentUser;
     }
 
     public User editUser(Long id, @Valid User user) throws Exception {
+
         Optional<User> existingUser = userRepository.findById(id);
         if (existingUser.isEmpty()) {
             throw new RuntimeException("User with id " + id + " does not exist");
         }
+
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
         if (checkUser.isPresent()){
             throw new Exception("User with this email ID already exists");
         }
+
         String contact = user.getContact();
         Optional<User> checkUserContact = userRepository.findUserByContact(contact);
         if (checkUserContact.isPresent()){
             throw new Exception("User with this contact number already exists");
         }
+
         User currentUser = existingUser.get();
         utils.copyNonNullProperties(user, currentUser);
+
         if (user.getPassword() != null) {
             String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
             String hashPassword = utils.get_SHA_512_SecurePassword(user.getPassword(), currentTimestamp);
@@ -103,7 +116,50 @@ public class UserService {
             currentUser.setCreatedAt(currentTimestamp);
             currentUser.setPassword(hashPassword);
         }
+
         return userRepository.save(currentUser);
+    }
+
+    public User verifyUserLogin(Login loginBody) throws Exception {
+
+        String contact = loginBody.getContact();
+        String password = loginBody.getPassword();
+
+        if (contact != null) {
+
+            Optional<User> currentUser = userRepository.findUserByContact(contact);
+            if (currentUser.isEmpty()) {
+                throw new Exception("Invalid credentials");
+            }
+
+            String createdAtTimestamp = currentUser.get().getCreatedAt();
+            String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
+
+            if (newHash.equals(currentUser.get().getPassword())) {
+                return currentUser.get();
+            } else {
+                throw new Exception("Invalid credentials");
+            }
+
+        } else {
+
+            String email = loginBody.getEmail();
+            Optional<User> currentUser = userRepository.findUserByEmail(email);
+
+            if (currentUser.isEmpty()) {
+                throw new Exception("Invalid credentials");
+            }
+
+            String createdAtTimestamp = currentUser.get().getCreatedAt();
+            String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
+
+            if (newHash.equals(currentUser.get().getPassword())) {
+                return currentUser.get();
+            } else {
+                throw new Exception("Invalid credentials");
+            }
+
+        }
     }
 
 }

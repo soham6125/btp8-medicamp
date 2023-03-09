@@ -1,8 +1,7 @@
 package com.example.btp8.controller;
 
 import com.example.btp8.model.Doctor;
-import com.example.btp8.model.DoctorLogin;
-import com.example.btp8.service.DoctorLoginService;
+import com.example.btp8.model.Login;
 import com.example.btp8.service.DoctorService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -18,11 +17,9 @@ import java.util.Map;
 public class DoctorController {
 
     private final DoctorService doctorService;
-    private final DoctorLoginService doctorLoginService;
 
-    public DoctorController(DoctorService doctorService, DoctorLoginService doctorLoginService) {
+    public DoctorController(DoctorService doctorService) {
         this.doctorService = doctorService;
-        this.doctorLoginService = doctorLoginService;
     }
 
     @GetMapping("/doctor/all")
@@ -59,7 +56,7 @@ public class DoctorController {
     }
 
     @PostMapping("/doctor/login")
-    public ResponseEntity<Doctor> login(@Valid @RequestBody DoctorLogin loginBody) throws Exception {
-        return ResponseEntity.status(HttpStatus.OK).body(doctorLoginService.verifyDoctorLogin(loginBody));
+    public ResponseEntity<Doctor> login(@Valid @RequestBody Login loginBody) throws Exception {
+        return ResponseEntity.status(HttpStatus.OK).body(doctorService.verifyDoctorLogin(loginBody));
     }
 }
