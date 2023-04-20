@@ -2,7 +2,6 @@ package com.example.btp8.controller;
 
 import com.example.btp8.model.Associate;
 import com.example.btp8.model.Login;
-import com.example.btp8.model.User;
 import com.example.btp8.service.AssociateService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -11,7 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.SimpleTimeZone;
 
 @RestController
 @RequestMapping(path = "/app/v1")
@@ -25,8 +26,8 @@ public class AssociateController {
 
     @GetMapping("/associate/all")
     public ResponseEntity<Map<String, Object>> findAssociatePaginated(@RequestParam(defaultValue = "0") int page,
-                                                                 @RequestParam(defaultValue = "5") int size,
-                                                                 @RequestParam(defaultValue = "") String email) {
+                                                                      @RequestParam(defaultValue = "5") int size,
+                                                                      @RequestParam(defaultValue = "") String email) {
         Map<String, Object> response = new HashMap<>();
         Page<Associate> associatePaginated = associateService.findAllAssociates(page, size, email);
         response.put("data", associatePaginated.getContent());
@@ -39,6 +40,12 @@ public class AssociateController {
     @GetMapping("/associate/{id}")
     public ResponseEntity<Associate> getAssociate(@PathVariable("id") Long id){
         return ResponseEntity.status(HttpStatus.OK).body(associateService.findAssociate(id));
+    }
+
+    @GetMapping("/associate")
+    public ResponseEntity<List<Associate>> getAssociateCategory(@RequestParam() String category){
+        System.out.println(category);
+        return ResponseEntity.status(HttpStatus.OK).body(associateService.getAssociateByCategory(category));
     }
 
     @PostMapping("/associate")

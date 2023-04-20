@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -23,6 +24,12 @@ public interface AssociateRepository extends JpaRepository<Associate, Long> {
             nativeQuery = true
     )
     Optional<Associate> findAssociateByContact(String contact);
+
+    @Query(
+            value = "SELECT * FROM associate b WHERE UPPER(b.area_of_expertise) like CONCAT('%',UPPER(?1),'%') order by rand() limit 2;",
+            nativeQuery = true
+    )
+    List<Associate> findAssociateByCategory(String category);
 
     @Query(
             value = "select * from associate b where UPPER(b.email) like CONCAT('%',UPPER(?1),'%') ",

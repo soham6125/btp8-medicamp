@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import javax.validation.Valid;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -22,12 +23,13 @@ import static java.time.Period.between;
 public class AssociateService {
 
     private final AssociateRepository associateRepository;
+
     @Autowired
     public AssociateService(AssociateRepository associateRepository) {
         this.associateRepository = associateRepository;
     }
 
-    public Associate findAssociate(Long id){
+    public Associate findAssociate(Long id) {
         Optional<Associate> associate = associateRepository.findById(id);
         if (associate.isEmpty()) {
             throw new RuntimeException("Associate with given ID does not exist");
@@ -35,7 +37,7 @@ public class AssociateService {
         return associate.get();
     }
 
-    public Page<Associate> findAllAssociates(int page, int size, String email){
+    public Page<Associate> findAllAssociates(int page, int size, String email) {
         return associateRepository.associateFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
     }
 
@@ -43,13 +45,13 @@ public class AssociateService {
 
         String email = associate.getEmail();
         Optional<Associate> checkAssociate = associateRepository.findAssociateByEmail(email);
-        if (checkAssociate.isPresent()){
+        if (checkAssociate.isPresent()) {
             throw new Exception("Associate with this email ID already exists");
         }
 
         String contact = associate.getContact();
         Optional<Associate> checkAssociateContact = associateRepository.findAssociateByContact(contact);
-        if (checkAssociateContact.isPresent()){
+        if (checkAssociateContact.isPresent()) {
             throw new Exception("Associate with this contact number already exists");
         }
 
@@ -86,13 +88,13 @@ public class AssociateService {
 
         String email = associate.getEmail();
         Optional<Associate> checkAssociate = associateRepository.findAssociateByEmail(email);
-        if (checkAssociate.isPresent()){
+        if (checkAssociate.isPresent()) {
             throw new Exception("Associate with this email ID already exists");
         }
 
         String contact = associate.getContact();
         Optional<Associate> checkAssociateContact = associateRepository.findAssociateByContact(contact);
-        if (checkAssociateContact.isPresent()){
+        if (checkAssociateContact.isPresent()) {
             throw new Exception("Associate with this contact number already exists");
         }
 
@@ -145,4 +147,10 @@ public class AssociateService {
 
         }
     }
+
+    public List<Associate> getAssociateByCategory(String category) {
+        List<Associate> allAssociates = associateRepository.findAssociateByCategory(category);
+        return allAssociates;
+    }
+
 }
