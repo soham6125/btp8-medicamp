@@ -1485,7 +1485,288 @@
       ]
     }
   ],
-  "bipolar_disorder": [],
+  "bipolar_disorder": [
+    {
+      "id": 0,
+      "question": "You could not shut your mind off or stop thoughts rushing through your mind",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "You experienced feelings of anguish or desperation",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "You were much more socially active than normal, and at all hours",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Your behavior was unsafe or risky in a way that wasn't normal for you",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "You felt exhausted or unusually fatigued",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "You got angry and you were aggressive or violent towards others",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "You talked a lot more or a lot faster than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "You took risks with your finances which caused problems for yourself or others",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Nothing could make you happy or joyful",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Your sex drive was much higher than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "You felt slower than normal, in your body or your mind, for a noticeable period of time",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "You were a lot more confident or self-assured than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "You didn’t sleep very much and felt like you didn’t really need to",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "You felt inadequate or to blame for things",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "You were much more lively and energetic than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "You became absent-minded and had difficulty focusing on tasks",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "You were much more productive than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "You became so excitable or agitated that others around you were surprised by your behavior, or your behavior caused problems for you",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "If you agreed with several of these statements, have any of these things happened at the same time?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Have you had trouble because of these issues either in your job, at home, or in your social life?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    }
+  ],
   "psychosis": [
     {
       "id": 0,
