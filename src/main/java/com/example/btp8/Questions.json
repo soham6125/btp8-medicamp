@@ -978,7 +978,250 @@
     }
   ],
   "sex_addiction": [],
-  "narcissistic_personality_disorder": [],
+  "narcissistic_personality_disorder": [
+    {
+      "id": 0,
+      "question": "I crave attention and admiration",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "I have trouble recognizing the feelings and needs of others",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "I am often preoccupied with thoughts of success, power, and status",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": " tell others about my relationships with high status people",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Often",
+          "score": 2
+        },
+        {
+          "answer": "Very frequently",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "I overestimate my achievements and talents",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "I undervalue the achievements of others",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "I feel upset when the people around me achieve success",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "I have trouble receiving criticism, even when it is valid",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "I believe I am unique, but only other special people can see that",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "I believe others are envious or jealous of me",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "I feel entitled to favorable treatment",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Somewhat disagree",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat agree",
+          "score": 2
+        },
+        {
+          "answer": "Agree",
+          "score": 3
+        }
+      ]
+    }
+  ],
   "internet_addiction": [],
   "ocd": [
     {
