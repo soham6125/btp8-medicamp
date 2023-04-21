@@ -733,7 +733,8 @@
           "score": 3
         }
       ]
-    },{
+    },
+    {
       "id": 6,
       "question": "I've been unable to connect to my emotions such as not being able to laugh or cry, or feel affection for those around me",
       "options": [
@@ -798,7 +799,8 @@
           "score": 3
         }
       ]
-    },{
+    },
+    {
       "id": 9,
       "question": "I experienced a racing pulse, excessive sweating, shaking, or chills when remembering the trauma",
       "options": [
@@ -819,8 +821,7 @@
           "score": 3
         }
       ]
-    }
-    ,
+    },
     {
       "id": 10,
       "question": "I've been hyper alert, particularly in situations with lots of other people around",
@@ -908,7 +909,8 @@
           "score": 3
         }
       ]
-    },{
+    },
+    {
       "id": 14,
       "question": "The life goals I had before the trauma have changed or have gone entirely",
       "options": [
@@ -929,8 +931,7 @@
           "score": 3
         }
       ]
-    }
-    ,
+    },
     {
       "id": 15,
       "question": "Thoughts or memories of the trauma have come to me while asleep",
@@ -979,7 +980,493 @@
   "sex_addiction": [],
   "narcissistic_personality_disorder": [],
   "internet_addiction": [],
-  "ocd": [],
+  "ocd": [
+    {
+      "id": 0,
+      "question": "To what extent were you able to exercise control over those obsessive thoughts?",
+      "options": [
+        {
+          "answer": "Total control",
+          "score": 0
+        },
+        {
+          "answer": "Much control",
+          "score": 1
+        },
+        {
+          "answer": "Moderate control",
+          "score": 2
+        },
+        {
+          "answer": "Some control",
+          "score": 3
+        },
+        {
+          "answer": "No control",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "To what extent were you able to exercise control over the compulsive behaviors?",
+      "options": [
+        {
+          "answer": "Total control",
+          "score": 0
+        },
+        {
+          "answer": "Much control",
+          "score": 1
+        },
+        {
+          "answer": "Moderate control",
+          "score": 2
+        },
+        {
+          "answer": "Some control",
+          "score": 3
+        },
+        {
+          "answer": "No control",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How much time did you spend engaging in compulsive behaviors?",
+      "options": [
+        {
+          "answer": "None at all",
+          "score": 0
+        },
+        {
+          "answer": "Up to an hour a day",
+          "score": 1
+        },
+        {
+          "answer": "A few hours per day",
+          "score": 2
+        },
+        {
+          "answer": "Several hours per day",
+          "score": 3
+        },
+        {
+          "answer": "Most or all of the day",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How much of the time were you able to stop yourself engaging in those compulsive behaviors?",
+      "options": [
+        {
+          "answer": "All of the time",
+          "score": 0
+        },
+        {
+          "answer": "Most of the time",
+          "score": 1
+        },
+        {
+          "answer": "Some of the time",
+          "score": 2
+        },
+        {
+          "answer": "A little bit",
+          "score": 3
+        },
+        {
+          "answer": "None at all",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "To what extent did these thoughts make you feel distressed or upset?",
+      "options": [
+        {
+          "answer": "None",
+          "score": 0
+        },
+        {
+          "answer": "Mild",
+          "score": 1
+        },
+        {
+          "answer": "Moderate",
+          "score": 2
+        },
+        {
+          "answer": "Severe",
+          "score": 3
+        },
+        {
+          "answer": "Extreme",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How much of the time were you able to stop yourself having obsessive thoughts?",
+      "options": [
+        {
+          "answer": "All of the time",
+          "score": 0
+        },
+        {
+          "answer": "Most of the time",
+          "score": 1
+        },
+        {
+          "answer": "Some of the time",
+          "score": 2
+        },
+        {
+          "answer": "A little bit",
+          "score": 3
+        },
+        {
+          "answer": "None at all",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "To what extent did these compulsive behaviors get in the way or your school, work, or social life?",
+      "options": [
+        {
+          "answer": "No impact",
+          "score": 0
+        },
+        {
+          "answer": "Mild impact",
+          "score": 1
+        },
+        {
+          "answer": "Moderate impact",
+          "score": 2
+        },
+        {
+          "answer": "Severe impact",
+          "score": 3
+        },
+        {
+          "answer": "Extreme impact",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "To what extent did these thoughts get in the way or your school, work, or social life?",
+      "options": [
+        {
+          "answer": "No impact",
+          "score": 0
+        },
+        {
+          "answer": "Mild impact",
+          "score": 1
+        },
+        {
+          "answer": "Moderate impact",
+          "score": 2
+        },
+        {
+          "answer": "Severe impact",
+          "score": 3
+        },
+        {
+          "answer": "Extreme impact",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How much of that period was occupied by uncontrollable or obsessive thoughts?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Up to an hour a day",
+          "score": 1
+        },
+        {
+          "answer": "A few hours per day",
+          "score": 2
+        },
+        {
+          "answer": "Several hours per day",
+          "score": 3
+        },
+        {
+          "answer": "Most or all of the day",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How anxious would you have been if you had been prevented acting out the compulsive behaviors?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Slightly",
+          "score": 1
+        },
+        {
+          "answer": "Somewhat",
+          "score": 2
+        },
+        {
+          "answer": "Very",
+          "score": 3
+        },
+        {
+          "answer": "Extreme",
+          "score": 4
+        }
+      ]
+    }
+  ],
   "bipolar_disorder": [],
-  "psychosis": []
+  "psychosis": [
+    {
+      "id": 0,
+      "question": "I sometimes see things that others tell me they cannot see",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "I sometimes feel the presence of someone around me despite being alone",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "I sometimes feel that someone or something else controls my thoughts",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "I frequently feel like other people are plotting against me",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "I feel that my body is different or behaves in a different way to how it used to",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "I frequently hear strange sounds like crashing or ringing",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "I have lost interest in things I used to like",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "I find that I experience smells or tastes that others cannot",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "I have seen someone's face change in front of me, or my own face has changed in the mirror",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Meeting new people makes me very nervous or stressed",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "I sometimes hear voices that others cannot",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "I am not always sure if something has actually happened, or whether I imagined it",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "I sometimes spot hidden messages in adverts on television, in shop displays, or in how things are arranged",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "I get the feeling that I have lived through the present situation before, like things are repeating",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Now and then I feel like I can almost hear my thoughts",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "I sometimes lose focus because of far-off sounds which I would not normally hear",
+      "options": [
+        {
+          "answer": "Disagree",
+          "score": 0
+        },
+        {
+          "answer": "Agree",
+          "score": 1
+        }
+      ]
+    }
+  ]
 }
