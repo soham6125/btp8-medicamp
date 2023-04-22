@@ -1,287 +1,199 @@
 {
   "depression": [
     {
-      "id": 0,
-      "question": "Difficulty focusing on everyday tasks",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Some of the time",
-          "score": 1
-        },
-        {
-          "answer": "Most of the time",
-          "score": 2
-        },
-        {
-          "answer": "Nearly all of the time",
-          "score": 3
-        }
-      ]
-    },
-    {
       "id": 1,
-      "question": "Finding no joy in life, or feeling like you never will again",
+      "question": "Little interest or pleasure in doing things",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 2,
-      "question": "Being lethargic or having no energy",
+      "question": "Feeling down, depressed, or hopeless",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 3,
-      "question": "Eating too much, or too little",
+      "question": "Trouble falling or staying asleep, or sleeping too much",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 4,
-      "question": "Being full of nervous energy, or moving much less than usual",
+      "question": "Feeling tired or having little energy",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 5,
-      "question": "Oversleeping, or struggling to get to sleep",
+      "question": "Poor appetite or overeating",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 6,
-      "question": "Being harsh on yourself or overly self-critical",
+      "question": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 7,
-      "question": "Feeling low or \"under a cloud\"",
+      "question": "Trouble concentrating on things, such as reading the newspaper or watching television?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 8,
-      "question": "Considering harming yourself, or committing suicide",
+      "question": "Moving or speaking so slowly that other people could have noticed. Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 9,
-      "question": "Headaches, cramps, aches, or pains that won't go away",
+      "question": "Thoughts that you would be better off dead or of hurting yourself in some way?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "question": "Loss of interest or pleasure in things you previously found enjoyable",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Some of the time",
-          "score": 1
-        },
-        {
-          "answer": "Most of the time",
-          "score": 2
-        },
-        {
-          "answer": "Nearly all of the time",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "question": "Feeling angry, irritable, or frustrated, even over small matters",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Some of the time",
-          "score": 1
-        },
-        {
-          "answer": "Most of the time",
-          "score": 2
-        },
-        {
-          "answer": "Nearly all of the time",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "question": "Slowed thinking, speaking, or body movements",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Some of the time",
-          "score": 1
-        },
-        {
-          "answer": "Most of the time",
-          "score": 2
-        },
-        {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
@@ -289,155 +201,377 @@
   ],
   "anxiety": [
     {
-      "id": 0,
-      "question": "I've been unable to stay in one place - like sitting down - for any length of time",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Some of the time",
-          "score": 1
-        },
-        {
-          "answer": "Most of the time",
-          "score": 2
-        },
-        {
-          "answer": "Nearly all of the time",
-          "score": 3
-        }
-      ]
-    },
-    {
       "id": 1,
-      "question": "I've been very concerned about several things at one time",
+      "question": "Over the last 2 weeks, how often have you been bothered by excessive worrying?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 2,
-      "question": "I've been agitated, tense, or skittish",
+      "question": "Over the last 2 weeks, how often have you felt nervous, anxious, or on edge?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 3,
-      "question": "I've been unable to feel calm or relaxed",
+      "question": "Over the last 2 weeks, how often have you had trouble relaxing or sitting still?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 4,
-      "question": "I've struggled to control feelings of anxiety, agitation, or fear",
+      "question": "Over the last 2 weeks, how often have you felt afraid as if something awful might happen?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 5,
-      "question": "I've felt bad-tempered, irritable, or moody",
+      "question": "Over the last 2 weeks, how often have you had a sudden feeling of panic or dread?",
       "options": [
         {
-          "answer": "Never",
+          "answer": "Not at all",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Several days",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "More than half the days",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Nearly every day",
           "score": 3
         }
       ]
     },
     {
       "id": 6,
-      "question": "I've been afraid or panicky about bad things that might happen to myself or others",
+      "question": "Over the last 2 weeks, how often have you had difficulty controlling worry or anxious thoughts?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Several days",
+          "score": 1
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Nearly every day",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Over the last 2 weeks, how often have you experienced physical symptoms such as sweating, trembling, or racing heart in situations that make you anxious?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Several days",
+          "score": 1
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Nearly every day",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Over the last 2 weeks, how often have you avoided situations or activities because they make you anxious?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Several days",
+          "score": 1
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Nearly every day",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Over the last 2 weeks, how often have you had difficulty falling asleep or staying asleep because of anxiety?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Several days",
+          "score": 1
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Nearly every day",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Over the last 2 weeks, how often have you felt irritable or easily annoyed due to anxiety?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "Several days",
+          "score": 1
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Nearly every day",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "ocd": [
+    {
+      "id": 1,
+      "question": "How often do you experience intrusive, unwanted, or disturbing thoughts or images that you can't get out of your head?",
       "options": [
         {
           "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Some of the time",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Most of the time",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Nearly all of the time",
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How often do you feel compelled to repeat certain behaviors or mental acts in response to these thoughts, such as counting, checking, or organizing?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How much time per day do you spend engaging in these compulsive behaviors or mental acts?",
+      "options": [
+        {
+          "answer": "Less than 1 hour",
+          "score": 0
+        },
+        {
+          "answer": "1-3 hours",
+          "score": 1
+        },
+        {
+          "answer": "3-6 hours",
+          "score": 2
+        },
+        {
+          "answer": "More than 6 hours",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How much distress or anxiety do these thoughts or behaviors cause you?",
+      "options": [
+        {
+          "answer": "None",
+          "score": 0
+        },
+        {
+          "answer": "Mild",
+          "score": 1
+        },
+        {
+          "answer": "Moderate",
+          "score": 2
+        },
+        {
+          "answer": "Severe",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How much do these thoughts or behaviors interfere with your daily life, work, or relationships?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "A little",
+          "score": 1
+        },
+        {
+          "answer": "Moderately",
+          "score": 2
+        },
+        {
+          "answer": "A lot",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How much do you try to resist or avoid these thoughts or behaviors?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "A little",
+          "score": 1
+        },
+        {
+          "answer": "Moderately",
+          "score": 2
+        },
+        {
+          "answer": "A lot",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How much do you feel like these thoughts or behaviors are irrational or unnecessary?",
+      "options": [
+        {
+          "answer": "Not at all",
+          "score": 0
+        },
+        {
+          "answer": "A little",
+          "score": 1
+        },
+        {
+          "answer": "Moderately",
+          "score": 2
+        },
+        {
+          "answer": "A lot",
           "score": 3
         }
       ]
@@ -977,7 +1111,6 @@
       ]
     }
   ],
-  "sex_addiction": [],
   "narcissistic_personality_disorder": [
     {
       "id": 0,
@@ -1222,270 +1355,288 @@
       ]
     }
   ],
-  "internet_addiction": [],
-  "ocd": [
+  "bipolar_disorder": [
     {
       "id": 0,
-      "question": "To what extent were you able to exercise control over those obsessive thoughts?",
+      "question": "You could not shut your mind off or stop thoughts rushing through your mind",
       "options": [
         {
-          "answer": "Total control",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Much control",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Moderate control",
-          "score": 2
-        },
-        {
-          "answer": "Some control",
-          "score": 3
-        },
-        {
-          "answer": "No control",
-          "score": 4
         }
       ]
     },
     {
       "id": 1,
-      "question": "To what extent were you able to exercise control over the compulsive behaviors?",
+      "question": "You experienced feelings of anguish or desperation",
       "options": [
         {
-          "answer": "Total control",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Much control",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Moderate control",
-          "score": 2
-        },
-        {
-          "answer": "Some control",
-          "score": 3
-        },
-        {
-          "answer": "No control",
-          "score": 4
         }
       ]
     },
     {
       "id": 2,
-      "question": "How much time did you spend engaging in compulsive behaviors?",
+      "question": "You were much more socially active than normal, and at all hours",
       "options": [
         {
-          "answer": "None at all",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Up to an hour a day",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "A few hours per day",
-          "score": 2
-        },
-        {
-          "answer": "Several hours per day",
-          "score": 3
-        },
-        {
-          "answer": "Most or all of the day",
-          "score": 4
         }
       ]
     },
     {
       "id": 3,
-      "question": "How much of the time were you able to stop yourself engaging in those compulsive behaviors?",
+      "question": "Your behavior was unsafe or risky in a way that wasn't normal for you",
       "options": [
         {
-          "answer": "All of the time",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Most of the time",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Some of the time",
-          "score": 2
-        },
-        {
-          "answer": "A little bit",
-          "score": 3
-        },
-        {
-          "answer": "None at all",
-          "score": 4
         }
       ]
     },
     {
       "id": 4,
-      "question": "To what extent did these thoughts make you feel distressed or upset?",
+      "question": "You felt exhausted or unusually fatigued",
       "options": [
         {
-          "answer": "None",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Mild",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Moderate",
-          "score": 2
-        },
-        {
-          "answer": "Severe",
-          "score": 3
-        },
-        {
-          "answer": "Extreme",
-          "score": 4
         }
       ]
     },
     {
       "id": 5,
-      "question": "How much of the time were you able to stop yourself having obsessive thoughts?",
+      "question": "You got angry and you were aggressive or violent towards others",
       "options": [
         {
-          "answer": "All of the time",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Most of the time",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Some of the time",
-          "score": 2
-        },
-        {
-          "answer": "A little bit",
-          "score": 3
-        },
-        {
-          "answer": "None at all",
-          "score": 4
         }
       ]
     },
     {
       "id": 6,
-      "question": "To what extent did these compulsive behaviors get in the way or your school, work, or social life?",
+      "question": "You talked a lot more or a lot faster than normal",
       "options": [
         {
-          "answer": "No impact",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Mild impact",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Moderate impact",
-          "score": 2
-        },
-        {
-          "answer": "Severe impact",
-          "score": 3
-        },
-        {
-          "answer": "Extreme impact",
-          "score": 4
         }
       ]
     },
     {
       "id": 7,
-      "question": "To what extent did these thoughts get in the way or your school, work, or social life?",
+      "question": "You took risks with your finances which caused problems for yourself or others",
       "options": [
         {
-          "answer": "No impact",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Mild impact",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "Moderate impact",
-          "score": 2
-        },
-        {
-          "answer": "Severe impact",
-          "score": 3
-        },
-        {
-          "answer": "Extreme impact",
-          "score": 4
         }
       ]
     },
     {
       "id": 8,
-      "question": "How much of that period was occupied by uncontrollable or obsessive thoughts?",
+      "question": "Nothing could make you happy or joyful",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Up to an hour a day",
+          "answer": "Yes",
           "score": 1
-        },
-        {
-          "answer": "A few hours per day",
-          "score": 2
-        },
-        {
-          "answer": "Several hours per day",
-          "score": 3
-        },
-        {
-          "answer": "Most or all of the day",
-          "score": 4
         }
       ]
     },
     {
       "id": 9,
-      "question": "How anxious would you have been if you had been prevented acting out the compulsive behaviors?",
+      "question": "Your sex drive was much higher than normal",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "No",
           "score": 0
         },
         {
-          "answer": "Slightly",
+          "answer": "Yes",
           "score": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "You felt slower than normal, in your body or your mind, for a noticeable period of time",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
         },
         {
-          "answer": "Somewhat",
-          "score": 2
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "You were a lot more confident or self-assured than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
         },
         {
-          "answer": "Very",
-          "score": 3
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "You didn’t sleep very much and felt like you didn’t really need to",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
         },
         {
-          "answer": "Extreme",
-          "score": 4
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "You felt inadequate or to blame for things",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "You were much more lively and energetic than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "You became absent-minded and had difficulty focusing on tasks",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "You were much more productive than normal",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "You became so excitable or agitated that others around you were surprised by your behavior, or your behavior caused problems for you",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "If you agreed with several of these statements, have any of these things happened at the same time?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Have you had trouble because of these issues either in your job, at home, or in your social life?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
         }
       ]
     }
   ],
-  "bipolar_disorder": [],
   "psychosis": [
     {
       "id": 0,
@@ -1711,5 +1862,615 @@
         }
       ]
     }
-  ]
+  ],
+  "stress": [
+    {
+      "id": 0,
+      "question": "Became pregnant",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Newborn or other addition the family",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Death of life partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Major workplace changes such as working hours or environment",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Significant difference in sleep habits (considerably more or less)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Foreclosure of a mortgage or loan",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Spouse starting or stopping working out of the family home",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Arguing considerably more or less with partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Significant difference in eating habits, for example changes to quantity, timing, or location",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Got back together with spouse or partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Celebrated one or more public holidays",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Separation from partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Career shift to a new sort of work",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "A start or end to formal education",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Loss of a good friend",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Workplace problems with a manager",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Significant difference in general habits, for example stopping smoking, gave up drinking, or became vegan",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Significant difference in frequency of family gatherings",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Got a loan",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Got a divorce",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Child leaving the family home",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Involuntarily lost your job",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Retired",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Significant difference in recreational habits, for example ended a longstanding hobby or started a new one",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Addition of a home or business mortgage",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Got married",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Achieved a great personal success which you had been working toward for more than 6 months",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Sex problems",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Relocation for work or other reasons",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Significant housing change (moving home, renovation, changes to the neighborhood)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Traffic ticket, jaywalking, or other minor legal issue",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Significant difference in faith-related habits (considerably more or less)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Significant change in level of responsibility at work, either much more or much less",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Death in the family",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Significant difference in frequency of social activities (considerably more or less)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Significant change in financial circumstances for better or for worse",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Went on vacation lasting more than a week",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Time spent in jail or otherwise incarcerated",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Serious injury or health issue",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Moving school",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Problems with partner’s parents",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "question": "Change in work, like location or role",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Serious family health issue",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    }
+  ],
+  "drug_addiction": [],
+  "sex_addiction": [],
+  "internet_addiction": [],
+  "borderline_personality_disorder": [],
+  "sleep_disorder": [],
+  "schizophrenia": []
 }
