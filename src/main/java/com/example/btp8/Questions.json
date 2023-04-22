@@ -977,7 +977,6 @@
       ]
     }
   ],
-  "sex_addiction": [],
   "narcissistic_personality_disorder": [
     {
       "id": 0,
@@ -1222,7 +1221,6 @@
       ]
     }
   ],
-  "internet_addiction": [],
   "ocd": [
     {
       "id": 0,
@@ -1992,5 +1990,615 @@
         }
       ]
     }
-  ]
+  ],
+  "stress": [
+    {
+      "id": 0,
+      "question": "Became pregnant",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Newborn or other addition the family",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Death of life partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Major workplace changes such as working hours or environment",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Significant difference in sleep habits (considerably more or less)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Foreclosure of a mortgage or loan",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Spouse starting or stopping working out of the family home",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Arguing considerably more or less with partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Significant difference in eating habits, for example changes to quantity, timing, or location",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Got back together with spouse or partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Celebrated one or more public holidays",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Separation from partner",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Career shift to a new sort of work",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "A start or end to formal education",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Loss of a good friend",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Workplace problems with a manager",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Significant difference in general habits, for example stopping smoking, gave up drinking, or became vegan",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Significant difference in frequency of family gatherings",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Got a loan",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Got a divorce",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Child leaving the family home",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Involuntarily lost your job",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Retired",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Significant difference in recreational habits, for example ended a longstanding hobby or started a new one",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Addition of a home or business mortgage",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Got married",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Achieved a great personal success which you had been working toward for more than 6 months",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Sex problems",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Relocation for work or other reasons",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Significant housing change (moving home, renovation, changes to the neighborhood)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Traffic ticket, jaywalking, or other minor legal issue",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Significant difference in faith-related habits (considerably more or less)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Significant change in level of responsibility at work, either much more or much less",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Death in the family",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Significant difference in frequency of social activities (considerably more or less)",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Significant change in financial circumstances for better or for worse",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Went on vacation lasting more than a week",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Time spent in jail or otherwise incarcerated",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Serious injury or health issue",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Moving school",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Problems with partner’s parents",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "question": "Change in work, like location or role",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Serious family health issue",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    }
+  ],
+  "drug_addiction": [],
+  "sex_addiction": [],
+  "internet_addiction": [],
+  "borderline_personality_disorder": [],
+  "sleep_disorder": [],
+  "schizophrenia": []
 }
