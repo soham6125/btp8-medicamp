@@ -579,34 +579,8 @@
   ],
   "adult_adhd": [
     {
-      "id": 0,
-      "question": "When you have to sit down for an extended period - like at a dinner - you find yourself fidgeting or feeling uncomfortable",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
       "id": 1,
-      "question": "You feel hyperactive and like you are on autopilot",
+      "question": "How often do you find it difficult to sustain your attention during tasks or activities?",
       "options": [
         {
           "answer": "Never",
@@ -622,490 +596,410 @@
         },
         {
           "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "You struggle to start tasks that require you to sit down and concentrate for an extended period",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "question": "You sometimes forget meetings, appointments, or events",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "question": "You struggle to complete tasks or projects, even ones which are nearly complete",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "question": "You find it hard to properly organize, plan, or do things in the right order",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    }
-  ],
-  "ptsd": [
-    {
-      "id": 0,
-      "question": "I've had trouble focusing on things like reading, TV shows, or conversations",
-      "options": [
-        {
-          "answer": "Not at all",
-          "score": 0
-        },
-        {
-          "answer": "Once",
-          "score": 1
-        },
-        {
-          "answer": "A few times",
-          "score": 2
-        },
-        {
-          "answer": "Several times",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "question": "Memories of the trauma came to mind at unwanted moments",
-      "options": [
-        {
-          "answer": "Not at all",
-          "score": 0
-        },
-        {
-          "answer": "Once",
-          "score": 1
-        },
-        {
-          "answer": "A few times",
-          "score": 2
-        },
-        {
-          "answer": "Several times",
           "score": 3
         }
       ]
     },
     {
       "id": 2,
-      "question": "Parts of the traumatic event are hazy or difficult to remember",
+      "question": "How often do you have trouble organizing tasks and activities?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 3,
-      "question": "I've been avoiding things - like places, people, or events - that make me think about the trauma",
+      "question": "How often do you avoid or delay starting tasks that require a lot of mental effort?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 4,
-      "question": "I've felt rushes of anger or irritability",
+      "question": "How often do you lose things necessary for tasks or activities, such as keys, wallet, phone, or paperwork?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 5,
-      "question": "I've been on edge much more than normal, particularly when there have been other people around",
+      "question": "How often do you forget important details or appointments?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 6,
-      "question": "I've been unable to connect to my emotions such as not being able to laugh or cry, or feel affection for those around me",
+      "question": "How often do you fidget or squirm when you have to sit down for a long time?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 7,
-      "question": "I've been trying to avoid thinking about the trauma, or the way that it makes me feel",
+      "question": "How often do you feel restless or have a hard time relaxing or unwinding?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 8,
-      "question": "I became frightened, angry, or upset when remembering the trauma",
+      "question": "How often do you interrupt or blurt out answers before the other person has finished asking the question?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 9,
-      "question": "I experienced a racing pulse, excessive sweating, shaking, or chills when remembering the trauma",
+      "question": "How often do you have difficulty waiting your turn in lines or in group situations?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 10,
-      "question": "I've been hyper alert, particularly in situations with lots of other people around",
+      "question": "How often do you find yourself talking excessively or impulsively without thinking it through?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "ptsd": [
+    {
+      "id": 1,
+      "question": "Have you experienced or witnessed a traumatic event, such as a serious accident, natural disaster, physical or sexual assault, combat, or other life-threatening event?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Have you had repeated or extreme exposure to traumatic events in your job, such as first responders, healthcare providers, or military personnel?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Do you experience intrusive thoughts or memories about the traumatic event, such as flashbacks or nightmares?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 11,
-      "question": "Memories of the trauma were so vivid I felt like they were reoccurring",
+      "id": 4,
+      "question": "Do you avoid situations or activities that remind you of the traumatic event, such as certain places or people?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 12,
-      "question": "I've felt detached from friends and family, or those closest to me",
+      "id": 5,
+      "question": "Do you experience negative changes in your thoughts or mood related to the traumatic event, such as feeling numb, hopeless, or disconnected from others?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 13,
-      "question": "I'm not interested in doing things or going places that I liked to do or go to before the trauma occurred",
+      "id": 6,
+      "question": "Do you experience physical or emotional reactions when reminded of the traumatic event, such as feeling tense, irritable, or easily startled?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 14,
-      "question": "The life goals I had before the trauma have changed or have gone entirely",
+      "id": 7,
+      "question": "Do you experience ongoing problems with sleep, such as difficulty falling or staying asleep, or having nightmares?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 15,
-      "question": "Thoughts or memories of the trauma have come to me while asleep",
+      "id": 8,
+      "question": "Do you feel jumpy or easily startled, even in situations that are not dangerous?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 16,
-      "question": "I've struggled to get to sleep, or to stay asleep",
+      "id": 9,
+      "question": "Do you feel angry or irritable, and have difficulty controlling your temper?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Have you experienced physical symptoms, such as headaches or stomachaches, that don't have a clear medical cause?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
           "score": 3
         }
       ]
@@ -1113,74 +1007,8 @@
   ],
   "narcissistic_personality_disorder": [
     {
-      "id": 0,
-      "question": "I crave attention and admiration",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Somewhat disagree",
-          "score": 1
-        },
-        {
-          "answer": "Somewhat agree",
-          "score": 2
-        },
-        {
-          "answer": "Agree",
-          "score": 3
-        }
-      ]
-    },
-    {
       "id": 1,
-      "question": "I have trouble recognizing the feelings and needs of others",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Somewhat disagree",
-          "score": 1
-        },
-        {
-          "answer": "Somewhat agree",
-          "score": 2
-        },
-        {
-          "answer": "Agree",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "I am often preoccupied with thoughts of success, power, and status",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Somewhat disagree",
-          "score": 1
-        },
-        {
-          "answer": "Somewhat agree",
-          "score": 2
-        },
-        {
-          "answer": "Agree",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "question": " tell others about my relationships with high status people",
+      "question": "Do you have an excessive sense of self-importance or entitlement?",
       "options": [
         {
           "answer": "Never",
@@ -1191,165 +1019,209 @@
           "score": 1
         },
         {
-          "answer": "Often",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Very frequently",
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Do you have a preoccupation with fantasies of unlimited success, power, brilliance, beauty, or ideal love?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Do you believe that you are \"special\" and unique and can only be understood by other special people?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 4,
-      "question": "I overestimate my achievements and talents",
+      "question": "Do you require excessive admiration from others?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 5,
-      "question": "I undervalue the achievements of others",
+      "question": "Do you have a sense of entitlement that makes you feel as though you deserve special treatment?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 6,
-      "question": "I feel upset when the people around me achieve success",
+      "question": "Are you often envious of others or believe that others are envious of you?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 7,
-      "question": "I have trouble receiving criticism, even when it is valid",
+      "question": "Do you have an arrogant or haughty attitude and behavior towards others?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 8,
-      "question": "I believe I am unique, but only other special people can see that",
+      "question": "Do you exploit others for personal gain or seek to take advantage of others?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 9,
-      "question": "I believe others are envious or jealous of me",
+      "question": "Do you lack empathy or have difficulty recognizing the feelings and needs of others?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 10,
-      "question": "I feel entitled to favorable treatment",
+      "question": "Do you have a tendency to envy others or to believe that others are envious of you?",
       "options": [
         {
-          "answer": "Disagree",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Somewhat disagree",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "Somewhat agree",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Agree",
+          "answer": "Often",
           "score": 3
         }
       ]
@@ -1357,1116 +1229,184 @@
   ],
   "bipolar_disorder": [
     {
-      "id": 0,
-      "question": "You could not shut your mind off or stop thoughts rushing through your mind",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
       "id": 1,
-      "question": "You experienced feelings of anguish or desperation",
+      "question": "Have you ever experienced a period of time when your mood was abnormally elevated, expansive, or irritable?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 2,
-      "question": "You were much more socially active than normal, and at all hours",
+      "question": "Have you ever experienced a period of time when your mood was abnormally depressed, sad, or hopeless?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 3,
-      "question": "Your behavior was unsafe or risky in a way that wasn't normal for you",
+      "question": "Have you ever experienced a period of time when you felt both abnormally elevated and depressed at the same time or in rapid succession?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 4,
-      "question": "You felt exhausted or unusually fatigued",
+      "question": "Have you ever experienced a period of time when you had a decreased need for sleep but still had plenty of energy and felt rested?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 5,
-      "question": "You got angry and you were aggressive or violent towards others",
+      "question": "Have you ever experienced a period of time when you had racing thoughts or a flight of ideas that were difficult to control?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 6,
-      "question": "You talked a lot more or a lot faster than normal",
+      "question": "Have you ever engaged in impulsive or risky behaviors during a period of abnormally elevated or irritable mood, such as reckless driving, excessive spending, or promiscuous sexual behavior?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 7,
-      "question": "You took risks with your finances which caused problems for yourself or others",
+      "question": "Have you ever experienced a period of time when you had a decreased interest or pleasure in activities that you normally enjoy, along with other symptoms such as decreased energy, poor concentration, and changes in appetite or sleep?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
+        },
+        {
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
+        },
+        {
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     },
     {
       "id": 8,
-      "question": "Nothing could make you happy or joyful",
+      "question": "Have you ever experienced a period of time when you had thoughts of death or suicide, or made a suicide attempt?",
       "options": [
         {
           "answer": "No",
           "score": 0
         },
         {
-          "answer": "Yes",
+          "answer": "Yes, but only once and it was not severe",
           "score": 1
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "question": "Your sex drive was much higher than normal",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
         },
         {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "question": "You felt slower than normal, in your body or your mind, for a noticeable period of time",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
+          "answer": "Yes, more than once and it was moderate",
+          "score": 2
         },
         {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "question": "You were a lot more confident or self-assured than normal",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "question": "You didn’t sleep very much and felt like you didn’t really need to",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "question": "You felt inadequate or to blame for things",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "question": "You were much more lively and energetic than normal",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "question": "You became absent-minded and had difficulty focusing on tasks",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "question": "You were much more productive than normal",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "question": "You became so excitable or agitated that others around you were surprised by your behavior, or your behavior caused problems for you",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "question": "If you agreed with several of these statements, have any of these things happened at the same time?",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "question": "Have you had trouble because of these issues either in your job, at home, or in your social life?",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
+          "answer": "Yes, more than once and it was severe",
+          "score": 3
         }
       ]
     }
   ],
-  "psychosis": [
-    {
-      "id": 0,
-      "question": "I sometimes see things that others tell me they cannot see",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "question": "I sometimes feel the presence of someone around me despite being alone",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "I sometimes feel that someone or something else controls my thoughts",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "question": "I frequently feel like other people are plotting against me",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "question": "I feel that my body is different or behaves in a different way to how it used to",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "question": "I frequently hear strange sounds like crashing or ringing",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "question": "I have lost interest in things I used to like",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "question": "I find that I experience smells or tastes that others cannot",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "question": "I have seen someone's face change in front of me, or my own face has changed in the mirror",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "question": "Meeting new people makes me very nervous or stressed",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "question": "I sometimes hear voices that others cannot",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "question": "I am not always sure if something has actually happened, or whether I imagined it",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "question": "I sometimes spot hidden messages in adverts on television, in shop displays, or in how things are arranged",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "question": "I get the feeling that I have lived through the present situation before, like things are repeating",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "question": "Now and then I feel like I can almost hear my thoughts",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "question": "I sometimes lose focus because of far-off sounds which I would not normally hear",
-      "options": [
-        {
-          "answer": "Disagree",
-          "score": 0
-        },
-        {
-          "answer": "Agree",
-          "score": 1
-        }
-      ]
-    }
-  ],
-  "stress": [
-    {
-      "id": 0,
-      "question": "Became pregnant",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "question": "Newborn or other addition the family",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "Death of life partner",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "question": "Major workplace changes such as working hours or environment",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "question": "Significant difference in sleep habits (considerably more or less)",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "question": "Foreclosure of a mortgage or loan",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "question": "Spouse starting or stopping working out of the family home",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "question": "Arguing considerably more or less with partner",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "question": "Significant difference in eating habits, for example changes to quantity, timing, or location",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "question": "Got back together with spouse or partner",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "question": "Celebrated one or more public holidays",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "question": "Separation from partner",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "question": "Career shift to a new sort of work",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "question": "A start or end to formal education",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "question": "Loss of a good friend",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "question": "Workplace problems with a manager",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "question": "Significant difference in general habits, for example stopping smoking, gave up drinking, or became vegan",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "question": "Significant difference in frequency of family gatherings",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "question": "Got a loan",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "question": "Got a divorce",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "question": "Child leaving the family home",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "question": "Involuntarily lost your job",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "question": "Retired",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "question": "Significant difference in recreational habits, for example ended a longstanding hobby or started a new one",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "question": "Addition of a home or business mortgage",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "question": "Got married",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "question": "Achieved a great personal success which you had been working toward for more than 6 months",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "question": "Sex problems",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "question": "Relocation for work or other reasons",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "question": "Significant housing change (moving home, renovation, changes to the neighborhood)",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "question": "Traffic ticket, jaywalking, or other minor legal issue",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "question": "Significant difference in faith-related habits (considerably more or less)",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "question": "Significant change in level of responsibility at work, either much more or much less",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "question": "Death in the family",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "question": "Significant difference in frequency of social activities (considerably more or less)",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "question": "Significant change in financial circumstances for better or for worse",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "question": "Went on vacation lasting more than a week",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "question": "Time spent in jail or otherwise incarcerated",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "question": "Serious injury or health issue",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 39,
-      "question": "Moving school",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "question": "Problems with partner’s parents",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "question": "Change in work, like location or role",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "question": "Serious family health issue",
-      "options": [
-        {
-          "answer": "No",
-          "score": 0
-        },
-        {
-          "answer": "Yes",
-          "score": 1
-        }
-      ]
-    }
-  ],
+  "psychosis": [],
+  "stress": [],
   "drug_addiction": [],
   "sex_addiction": [],
   "internet_addiction": [],
