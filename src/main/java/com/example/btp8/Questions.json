@@ -579,34 +579,8 @@
   ],
   "adult_adhd": [
     {
-      "id": 0,
-      "question": "When you have to sit down for an extended period - like at a dinner - you find yourself fidgeting or feeling uncomfortable",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
       "id": 1,
-      "question": "You feel hyperactive and like you are on autopilot",
+      "question": "How often do you find it difficult to sustain your attention during tasks or activities?",
       "options": [
         {
           "answer": "Never",
@@ -622,490 +596,410 @@
         },
         {
           "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "You struggle to start tasks that require you to sit down and concentrate for an extended period",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "question": "You sometimes forget meetings, appointments, or events",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "question": "You struggle to complete tasks or projects, even ones which are nearly complete",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "question": "You find it hard to properly organize, plan, or do things in the right order",
-      "options": [
-        {
-          "answer": "Never",
-          "score": 0
-        },
-        {
-          "answer": "Rarely",
-          "score": 1
-        },
-        {
-          "answer": "Sometimes",
-          "score": 2
-        },
-        {
-          "answer": "Often",
-          "score": 3
-        },
-        {
-          "answer": "Always",
-          "score": 4
-        }
-      ]
-    }
-  ],
-  "ptsd": [
-    {
-      "id": 0,
-      "question": "I've had trouble focusing on things like reading, TV shows, or conversations",
-      "options": [
-        {
-          "answer": "Not at all",
-          "score": 0
-        },
-        {
-          "answer": "Once",
-          "score": 1
-        },
-        {
-          "answer": "A few times",
-          "score": 2
-        },
-        {
-          "answer": "Several times",
-          "score": 3
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "question": "Memories of the trauma came to mind at unwanted moments",
-      "options": [
-        {
-          "answer": "Not at all",
-          "score": 0
-        },
-        {
-          "answer": "Once",
-          "score": 1
-        },
-        {
-          "answer": "A few times",
-          "score": 2
-        },
-        {
-          "answer": "Several times",
           "score": 3
         }
       ]
     },
     {
       "id": 2,
-      "question": "Parts of the traumatic event are hazy or difficult to remember",
+      "question": "How often do you have trouble organizing tasks and activities?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 3,
-      "question": "I've been avoiding things - like places, people, or events - that make me think about the trauma",
+      "question": "How often do you avoid or delay starting tasks that require a lot of mental effort?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 4,
-      "question": "I've felt rushes of anger or irritability",
+      "question": "How often do you lose things necessary for tasks or activities, such as keys, wallet, phone, or paperwork?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 5,
-      "question": "I've been on edge much more than normal, particularly when there have been other people around",
+      "question": "How often do you forget important details or appointments?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 6,
-      "question": "I've been unable to connect to my emotions such as not being able to laugh or cry, or feel affection for those around me",
+      "question": "How often do you fidget or squirm when you have to sit down for a long time?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 7,
-      "question": "I've been trying to avoid thinking about the trauma, or the way that it makes me feel",
+      "question": "How often do you feel restless or have a hard time relaxing or unwinding?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 8,
-      "question": "I became frightened, angry, or upset when remembering the trauma",
+      "question": "How often do you interrupt or blurt out answers before the other person has finished asking the question?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 9,
-      "question": "I experienced a racing pulse, excessive sweating, shaking, or chills when remembering the trauma",
+      "question": "How often do you have difficulty waiting your turn in lines or in group situations?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
       "id": 10,
-      "question": "I've been hyper alert, particularly in situations with lots of other people around",
+      "question": "How often do you find yourself talking excessively or impulsively without thinking it through?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "ptsd": [
+    {
+      "id": 1,
+      "question": "Have you experienced or witnessed a traumatic event, such as a serious accident, natural disaster, physical or sexual assault, combat, or other life-threatening event?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Have you had repeated or extreme exposure to traumatic events in your job, such as first responders, healthcare providers, or military personnel?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Do you experience intrusive thoughts or memories about the traumatic event, such as flashbacks or nightmares?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 11,
-      "question": "Memories of the trauma were so vivid I felt like they were reoccurring",
+      "id": 4,
+      "question": "Do you avoid situations or activities that remind you of the traumatic event, such as certain places or people?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 12,
-      "question": "I've felt detached from friends and family, or those closest to me",
+      "id": 5,
+      "question": "Do you experience negative changes in your thoughts or mood related to the traumatic event, such as feeling numb, hopeless, or disconnected from others?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 13,
-      "question": "I'm not interested in doing things or going places that I liked to do or go to before the trauma occurred",
+      "id": 6,
+      "question": "Do you experience physical or emotional reactions when reminded of the traumatic event, such as feeling tense, irritable, or easily startled?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 14,
-      "question": "The life goals I had before the trauma have changed or have gone entirely",
+      "id": 7,
+      "question": "Do you experience ongoing problems with sleep, such as difficulty falling or staying asleep, or having nightmares?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 15,
-      "question": "Thoughts or memories of the trauma have come to me while asleep",
+      "id": 8,
+      "question": "Do you feel jumpy or easily startled, even in situations that are not dangerous?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
           "score": 3
         }
       ]
     },
     {
-      "id": 16,
-      "question": "I've struggled to get to sleep, or to stay asleep",
+      "id": 9,
+      "question": "Do you feel angry or irritable, and have difficulty controlling your temper?",
       "options": [
         {
-          "answer": "Not at all",
+          "answer": "Never",
           "score": 0
         },
         {
-          "answer": "Once",
+          "answer": "Rarely",
           "score": 1
         },
         {
-          "answer": "A few times",
+          "answer": "Sometimes",
           "score": 2
         },
         {
-          "answer": "Several times",
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Have you experienced physical symptoms, such as headaches or stomachaches, that don't have a clear medical cause?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
           "score": 3
         }
       ]
@@ -1526,7 +1420,7 @@
     },
     {
       "id": 12,
-      "question": "You didn’t sleep very much and felt like you didn’t really need to",
+      "question": "You did not sleep very much and felt like you did not really need to",
       "options": [
         {
           "answer": "No",
