@@ -5,7 +5,6 @@ import lombok.*;
 
 import javax.validation.constraints.NotNull;
 
-@Data
 @Entity(name = "appointments")
 @NoArgsConstructor
 @AllArgsConstructor

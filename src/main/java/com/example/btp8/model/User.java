@@ -1,15 +1,16 @@
 package com.example.btp8.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.List;
 
-@Data
-@Entity
-@Table(name = "user")
+@Entity(name = "user")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

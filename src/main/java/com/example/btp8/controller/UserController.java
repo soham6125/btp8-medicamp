@@ -1,7 +1,9 @@
 package com.example.btp8.controller;
 
 import com.example.btp8.dtos.AppointmentDto;
+import com.example.btp8.dtos.AppointmentResponseDto;
 import com.example.btp8.dtos.ErrorResponseDto;
+import com.example.btp8.dtos.UserResponseDto;
 import com.example.btp8.exceptions.DoctorNotFoundException;
 import com.example.btp8.exceptions.UserNotFoundException;
 import com.example.btp8.model.Appointment;
@@ -47,22 +49,22 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public ResponseEntity<User> getUser(@PathVariable("id") Long id){
+    public ResponseEntity<UserResponseDto> getUser(@PathVariable("id") Long id){
         return ResponseEntity.status(HttpStatus.OK).body(userService.findUser(id));
     }
 
     @PostMapping("/user")
-    public ResponseEntity<User> addUser(@Valid @RequestBody User user) throws Exception {
+    public ResponseEntity<UserResponseDto> addUser(@Valid @RequestBody User user) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(userService.addUser(user));
     }
 
     @DeleteMapping("/user/{id}")
-    public ResponseEntity<User> deleteUser(@PathVariable("id") Long id) throws Exception {
+    public ResponseEntity<UserResponseDto> deleteUser(@PathVariable("id") Long id) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(userService.deleteUser(id));
     }
 
     @PatchMapping("/user/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable("id") Long id, @Valid @RequestBody User user) throws Exception {
+    public ResponseEntity<UserResponseDto> updateUser(@PathVariable("id") Long id, @Valid @RequestBody User user) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(userService.editUser(id, user));
     }
 
@@ -72,15 +74,16 @@ public class UserController {
     }
 
     @PostMapping("/user/{id}/appointment")
-    public ResponseEntity<Appointment> makeAppointment(@PathVariable("id") Long userId, @RequestBody AppointmentDto appointmentDto) {
-        return ResponseEntity.status(HttpStatus.OK).body(userService.createNewAppointment(userId, appointmentDto));
+    public ResponseEntity<AppointmentResponseDto> makeAppointment(@PathVariable("id") Long userId, @RequestBody AppointmentDto appointmentDto) {
+        AppointmentResponseDto appointmentResponse = userService.createNewAppointment(userId, appointmentDto);
+        return ResponseEntity.status(HttpStatus.OK).body(appointmentResponse);
     }
 
-//    @ExceptionHandler({IllegalArgumentException.class, UserNotFoundException.class, DoctorNotFoundException.class})
-//    public ResponseEntity<ErrorResponseDto> handleExceptions(Exception e) {
-//        if (e instanceof UserNotFoundException || e instanceof DoctorNotFoundException) {
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponseDto(e.getMessage()));
-//        }
-//        return ResponseEntity.badRequest().body(new ErrorResponseDto(e.getMessage()));
-//    }
+    @ExceptionHandler({IllegalArgumentException.class, UserNotFoundException.class, DoctorNotFoundException.class})
+    public ResponseEntity<ErrorResponseDto> handleExceptions(Exception e) {
+        if (e instanceof UserNotFoundException || e instanceof DoctorNotFoundException) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponseDto(e.getMessage()));
+        }
+        return ResponseEntity.badRequest().body(new ErrorResponseDto(e.getMessage()));
+    }
 }

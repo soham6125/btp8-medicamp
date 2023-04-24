@@ -1,14 +1,18 @@
 package com.example.btp8.model;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 
-@Data
-@Entity
-@Table(name = "login")
+@Entity(name = "login")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

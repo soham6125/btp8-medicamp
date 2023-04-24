@@ -5,9 +5,7 @@ import lombok.*;
 
 import javax.validation.constraints.NotNull;
 
-@Data
-@Entity
-@Table(name = "answer")
+@Entity(name = "answer")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

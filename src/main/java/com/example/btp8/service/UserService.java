@@ -1,6 +1,8 @@
 package com.example.btp8.service;
 
 import com.example.btp8.dtos.AppointmentDto;
+import com.example.btp8.dtos.AppointmentResponseDto;
+import com.example.btp8.dtos.UserResponseDto;
 import com.example.btp8.exceptions.DoctorNotFoundException;
 import com.example.btp8.exceptions.UserNotFoundException;
 import com.example.btp8.model.Appointment;
@@ -13,16 +15,18 @@ import com.example.btp8.repository.UserRepository;
 import com.example.btp8.utils.utils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import org.springframework.data.domain.Page;
 
 import javax.validation.Valid;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.*;
+import java.util.Map;
+import java.util.Optional;
+import java.util.UUID;
 
 import static java.time.Period.between;
 
@@ -32,12 +36,14 @@ public class UserService {
     private final UserRepository userRepository;
     private final DoctorRepository doctorRepository;
     private final AppointmentRepository appointmentRepository;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public UserService(UserRepository userRepository, DoctorRepository doctorRepository, AppointmentRepository appointmentRepository) {
+    public UserService(UserRepository userRepository, DoctorRepository doctorRepository, AppointmentRepository appointmentRepository, ModelMapper modelMapper) {
         this.userRepository = userRepository;
         this.doctorRepository = doctorRepository;
         this.appointmentRepository = appointmentRepository;
+        this.modelMapper = modelMapper;
     }
 
     public Map<String, String> healthCheck() {
@@ -46,19 +52,17 @@ public class UserService {
         return res;
     }
 
-    public User findUser(Long id) {
-        Optional<User> user = userRepository.findById(id);
-        if (user.isEmpty()) {
-            throw new RuntimeException("User with given ID does not exist");
-        }
-        return user.get();
+    public UserResponseDto findUser(Long id) {
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
+        return modelMapper.map(user, UserResponseDto.class);
     }
 
     public Page<User> findAllUsers(int page, int size, String email) {
+//        TODO: Change User to UserResponseDto
         return userRepository.userFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
     }
 
-    public User addUser(@Valid User user) throws Exception {
+    public UserResponseDto addUser(@Valid User user) throws Exception {
 
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
@@ -80,15 +84,14 @@ public class UserService {
         user.setAge(age);
 
         String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
-//        System.out.println(currentTimestamp);
         String hashPassword = utils.get_SHA_512_SecurePassword(user.getPassword(), currentTimestamp);
-//        System.out.println("hash => " + hashPassword);
         user.setPassword(hashPassword);
         user.setCreatedAt(currentTimestamp);
-        return userRepository.save(user);
+        User savedUser = userRepository.save(user);
+        return modelMapper.map(savedUser, UserResponseDto.class);
     }
 
-    public User deleteUser(Long id) throws Exception {
+    public UserResponseDto deleteUser(Long id) throws Exception {
 
         Optional<User> user = userRepository.findById(id);
         if (user.isEmpty()) {
@@ -97,15 +100,12 @@ public class UserService {
 
         User currentUser = user.get();
         userRepository.delete(currentUser);
-        return currentUser;
+        return modelMapper.map(currentUser, UserResponseDto.class);
     }
 
-    public User editUser(Long id, @Valid User user) throws Exception {
+    public UserResponseDto editUser(Long id, @Valid User user) throws Exception {
 
-        Optional<User> existingUser = userRepository.findById(id);
-        if (existingUser.isEmpty()) {
-            throw new RuntimeException("User with id " + id + " does not exist");
-        }
+        User existingUser = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
 
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
@@ -119,22 +119,22 @@ public class UserService {
             throw new Exception("User with this contact number already exists");
         }
 
-        User currentUser = existingUser.get();
-        utils.copyNonNullProperties(user, currentUser);
+        utils.copyNonNullProperties(user, existingUser);
 
         if (user.getPassword() != null) {
             String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
             String hashPassword = utils.get_SHA_512_SecurePassword(user.getPassword(), currentTimestamp);
             System.out.println("hash => " + hashPassword);
-            currentUser.setCreatedAt(currentTimestamp);
-            currentUser.setPassword(hashPassword);
+            existingUser.setCreatedAt(currentTimestamp);
+            existingUser.setPassword(hashPassword);
         }
 
-        return userRepository.save(currentUser);
+        User savedUser = userRepository.save(existingUser);
+        return modelMapper.map(savedUser, UserResponseDto.class);
     }
 
     public User verifyUserLogin(Login loginBody) throws Exception {
-
+//        TODO: to change later
         String contact = loginBody.getContact();
         String password = loginBody.getPassword();
 
@@ -175,15 +175,15 @@ public class UserService {
         }
     }
 
-    public Appointment createNewAppointment(Long userId, AppointmentDto appointmentDto) {
+    public AppointmentResponseDto createNewAppointment(Long userId, AppointmentDto appointmentDto) {
         User user = userRepository.findById(userId).orElseThrow(() -> new UserNotFoundException(userId));
-//        Doctor doctor = doctorRepository.findById(appointmentDto.getDoctorId()).orElseThrow(() -> new DoctorNotFoundException(appointmentDto.getDoctorId()));
-        Appointment appointment = new Appointment();
+        Doctor doctor = doctorRepository.findById(appointmentDto.getDoctorId()).orElseThrow(() -> new DoctorNotFoundException(appointmentDto.getDoctorId()));
+        Appointment appointment = modelMapper.map(appointmentDto, Appointment.class);
         appointment.setUser(user);
-//        appointment.setDoctor(doctor);
+        appointment.setDoctor(doctor);
         String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
         appointment.setCreatedAt(currentTimestamp);
-        appointment.setTimeSlot(appointmentDto.getTimeSlot());
-        return appointmentRepository.save(appointment);
+        Appointment savedAppointment = appointmentRepository.save(appointment);
+        return modelMapper.map(savedAppointment, AppointmentResponseDto.class);
     }
 }

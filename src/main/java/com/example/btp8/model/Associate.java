@@ -1,14 +1,18 @@
 package com.example.btp8.model;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
-@Data
-@Entity
-@Table(name = "associate")
+@Entity(name = "associate")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

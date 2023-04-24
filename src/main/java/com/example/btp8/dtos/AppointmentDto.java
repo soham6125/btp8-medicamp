@@ -1,12 +1,11 @@
 package com.example.btp8.dtos;
 
 import lombok.Data;
-import lombok.Getter;
+import lombok.NonNull;
 
 @Data
-@Getter
 public class AppointmentDto {
-    Long doctorId;
-    String timeSlot;
+    @NonNull Long doctorId;
+    @NonNull String timeSlot;
     String createdAt;
 }
