@@ -1,5 +1,10 @@
 package com.example.btp8.controller;
 
+import com.example.btp8.dtos.AppointmentDto;
+import com.example.btp8.dtos.ErrorResponseDto;
+import com.example.btp8.exceptions.DoctorNotFoundException;
+import com.example.btp8.exceptions.UserNotFoundException;
+import com.example.btp8.model.Appointment;
 import com.example.btp8.model.Login;
 import com.example.btp8.model.User;
 import com.example.btp8.service.UserService;
@@ -66,4 +71,16 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(userService.verifyUserLogin(loginBody));
     }
 
+    @PostMapping("/user/{id}/appointment")
+    public ResponseEntity<Appointment> makeAppointment(@PathVariable("id") Long userId, @RequestBody AppointmentDto appointmentDto) {
+        return ResponseEntity.status(HttpStatus.OK).body(userService.createNewAppointment(userId, appointmentDto));
+    }
+
+//    @ExceptionHandler({IllegalArgumentException.class, UserNotFoundException.class, DoctorNotFoundException.class})
+//    public ResponseEntity<ErrorResponseDto> handleExceptions(Exception e) {
+//        if (e instanceof UserNotFoundException || e instanceof DoctorNotFoundException) {
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponseDto(e.getMessage()));
+//        }
+//        return ResponseEntity.badRequest().body(new ErrorResponseDto(e.getMessage()));
+//    }
 }

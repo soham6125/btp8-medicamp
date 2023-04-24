@@ -4,14 +4,14 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import javax.validation.constraints.NotNull;
-import java.sql.Timestamp;
 
 @Data
 @Entity
-@Getter
-@Setter
 @Table(name = "answer")
 @NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

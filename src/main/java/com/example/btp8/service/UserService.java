@@ -1,9 +1,17 @@
 package com.example.btp8.service;
 
+import com.example.btp8.dtos.AppointmentDto;
+import com.example.btp8.exceptions.DoctorNotFoundException;
+import com.example.btp8.exceptions.UserNotFoundException;
+import com.example.btp8.model.Appointment;
+import com.example.btp8.model.Doctor;
 import com.example.btp8.model.Login;
 import com.example.btp8.model.User;
+import com.example.btp8.repository.AppointmentRepository;
+import com.example.btp8.repository.DoctorRepository;
 import com.example.btp8.repository.UserRepository;
 import com.example.btp8.utils.utils;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -22,9 +30,14 @@ import static java.time.Period.between;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final DoctorRepository doctorRepository;
+    private final AppointmentRepository appointmentRepository;
+
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository, DoctorRepository doctorRepository, AppointmentRepository appointmentRepository) {
         this.userRepository = userRepository;
+        this.doctorRepository = doctorRepository;
+        this.appointmentRepository = appointmentRepository;
     }
 
     public Map<String, String> healthCheck() {
@@ -33,7 +46,7 @@ public class UserService {
         return res;
     }
 
-    public User findUser(Long id){
+    public User findUser(Long id) {
         Optional<User> user = userRepository.findById(id);
         if (user.isEmpty()) {
             throw new RuntimeException("User with given ID does not exist");
@@ -41,7 +54,7 @@ public class UserService {
         return user.get();
     }
 
-    public Page<User> findAllUsers(int page, int size, String email){
+    public Page<User> findAllUsers(int page, int size, String email) {
         return userRepository.userFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
     }
 
@@ -49,13 +62,13 @@ public class UserService {
 
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
-        if (checkUser.isPresent()){
+        if (checkUser.isPresent()) {
             throw new Exception("User with this email ID already exists");
         }
 
         String contact = user.getContact();
         Optional<User> checkUserContact = userRepository.findUserByContact(contact);
-        if (checkUserContact.isPresent()){
+        if (checkUserContact.isPresent()) {
             throw new Exception("User with this contact number already exists");
         }
 
@@ -96,13 +109,13 @@ public class UserService {
 
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
-        if (checkUser.isPresent()){
+        if (checkUser.isPresent()) {
             throw new Exception("User with this email ID already exists");
         }
 
         String contact = user.getContact();
         Optional<User> checkUserContact = userRepository.findUserByContact(contact);
-        if (checkUserContact.isPresent()){
+        if (checkUserContact.isPresent()) {
             throw new Exception("User with this contact number already exists");
         }
 
@@ -162,4 +175,15 @@ public class UserService {
         }
     }
 
+    public Appointment createNewAppointment(Long userId, AppointmentDto appointmentDto) {
+        User user = userRepository.findById(userId).orElseThrow(() -> new UserNotFoundException(userId));
+//        Doctor doctor = doctorRepository.findById(appointmentDto.getDoctorId()).orElseThrow(() -> new DoctorNotFoundException(appointmentDto.getDoctorId()));
+        Appointment appointment = new Appointment();
+        appointment.setUser(user);
+//        appointment.setDoctor(doctor);
+        String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
+        appointment.setCreatedAt(currentTimestamp);
+        appointment.setTimeSlot(appointmentDto.getTimeSlot());
+        return appointmentRepository.save(appointment);
+    }
 }

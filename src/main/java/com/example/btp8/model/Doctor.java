@@ -45,4 +45,7 @@ public class Doctor {
     private String createdAt;
     @NotNull
     private List<String> timeSlots;
+    @NotNull
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
+    private List<Appointment> appointments;
 }
