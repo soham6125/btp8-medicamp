@@ -13,14 +13,17 @@ import org.springframework.stereotype.Service;
 import javax.validation.Valid;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 import static java.time.Period.between;
+
 @Service
 public class DoctorService {
 
     private final DoctorRepository doctorRepository;
+
     @Autowired
     public DoctorService(DoctorRepository doctorRepository) {
         this.doctorRepository = doctorRepository;
@@ -42,13 +45,13 @@ public class DoctorService {
 
         String email = doctor.getEmail();
         Optional<Doctor> checkDoctor = doctorRepository.findDoctorByEmail(email);
-        if (checkDoctor.isPresent()){
+        if (checkDoctor.isPresent()) {
             throw new Exception("Doctor with this email " + email + " already exists");
         }
 
         String contact = doctor.getContact();
         Optional<Doctor> checkDoctorContact = doctorRepository.findDoctorByContact(contact);
-        if (checkDoctorContact.isPresent()){
+        if (checkDoctorContact.isPresent()) {
             throw new Exception("User with this contact number already exists");
         }
 
@@ -65,6 +68,8 @@ public class DoctorService {
         String hashPassword = utils.get_SHA_512_SecurePassword(doctor.getPassword(), currentTimestamp);
         System.out.println("hash => " + hashPassword);
         doctor.setPassword(hashPassword);
+
+        doctor.setTimeSlots(utils.getAllTimeSlots());
 
         return doctorRepository.save(doctor);
     }
@@ -89,13 +94,13 @@ public class DoctorService {
 
         String email = doctor.getEmail();
         Optional<Doctor> checkDoctor = doctorRepository.findDoctorByEmail(email);
-        if (checkDoctor.isPresent()){
+        if (checkDoctor.isPresent()) {
             throw new Exception("User with this email ID already exists");
         }
 
         String contact = doctor.getContact();
         Optional<Doctor> checkDoctorContact = doctorRepository.findDoctorByContact(contact);
-        if (checkDoctorContact.isPresent()){
+        if (checkDoctorContact.isPresent()) {
             throw new Exception("User with this contact number already exists");
         }
 
@@ -150,4 +155,23 @@ public class DoctorService {
         }
     }
 
+    public Doctor updateAppointment(Long id, String time) throws Exception {
+        Doctor doctor = doctorRepository.findById(id).orElseThrow(() -> new Exception("Doctor not Found"));
+        List<String> timeslots = doctor.getTimeSlots();
+        String found = null;
+        for (String s : timeslots) {
+            if (s.equals(time)) {
+                found = s;
+                break;
+            }
+        }
+        if (found == null) {
+            timeslots.add(time);
+        } else {
+            timeslots.remove(found);
+        }
+        System.out.println(timeslots);
+        doctor.setTimeSlots(timeslots);
+        return doctorRepository.save(doctor);
+    }
 }

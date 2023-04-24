@@ -4,19 +4,14 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.PBEKeySpec;
 import java.beans.PropertyDescriptor;
-import java.math.BigInteger;
-import java.security.spec.InvalidKeySpecException;
-import java.util.HashSet;
-import java.util.Set;
-
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.SecureRandom;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class utils {
 
     private static String[] getNullPropertyNames (Object source) {
@@ -51,5 +46,23 @@ public class utils {
             e.printStackTrace();
         }
         return generatedPassword;
+    }
+
+    public static List<String> getAllTimeSlots() {
+        List<String> timeslots = new ArrayList<>();
+        for (int i = 0; i < 23; i++) {
+            StringBuilder time = new StringBuilder();
+            if (i < 10) {
+                time.append("0");
+            }
+            time.append(i).append("-");
+            if (i < 9) {
+                time.append(("0"));
+            }
+            time.append(i + 1);
+            timeslots.add(time.toString());
+        }
+        timeslots.add("23-00");
+        return timeslots;
     }
 }

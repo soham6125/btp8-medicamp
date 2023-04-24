@@ -55,6 +55,12 @@ public class DoctorController {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.editDoctor(id, doctor));
     }
 
+    @PatchMapping("/doctor/{id}/appointment")
+    public ResponseEntity<Doctor> updateTimeSlots(@PathVariable("id") Long id, @RequestBody String timeslot) throws Exception {
+        System.out.println(timeslot);
+        return ResponseEntity.status(HttpStatus.OK).body(doctorService.updateAppointment(id, timeslot));
+    }
+
     @PostMapping("/doctor/login")
     public ResponseEntity<Doctor> login(@Valid @RequestBody Login loginBody) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.verifyDoctorLogin(loginBody));
