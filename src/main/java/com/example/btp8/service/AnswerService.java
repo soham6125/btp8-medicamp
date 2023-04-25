@@ -1,27 +1,47 @@
 package com.example.btp8.service;
 
+import com.example.btp8.dtos.DoctorResponseDto;
 import com.example.btp8.model.Answer;
+import com.example.btp8.model.Associate;
+import com.example.btp8.model.Doctor;
 import com.example.btp8.repository.AnswerRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service
 public class AnswerService {
 
     private final AnswerRepository answerRepository;
+    private final AssociateService associateService;
+    private final DoctorService doctorService;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public AnswerService(AnswerRepository answerRepository) {
+    public AnswerService(AnswerRepository answerRepository, AssociateService associateService, DoctorService doctorService, ModelMapper modelMapper) {
         this.answerRepository = answerRepository;
+        this.associateService = associateService;
+        this.doctorService = doctorService;
+        this.modelMapper = modelMapper;
     }
 
-    public Answer addAnswer(Answer answer) {
+    public Map<String, Object> addAnswer(Answer answer) {
         Long currentTimestamp = Instant.now().toEpochMilli();
         answer.setCreatedAt(currentTimestamp);
-        return answerRepository.save(answer);
+        answerRepository.save(answer);
+        List<Associate> associates = associateService.getAssociateByCategory(answer.getCategory());
+        List<Doctor> doctors = doctorService.getDoctorByCategory(answer.getCategory());
+        List<DoctorResponseDto> doctorResponse = doctors.stream().map(doctor -> modelMapper.map(doctor, DoctorResponseDto.class)).collect(Collectors.toList());
+        Map<String, Object> response = new HashMap<>();
+        response.put("associates", associates);
+        response.put("doctors", doctorResponse);
+        return response;
     }
 
     public List<Answer> findAllAnswers(Long userID, String category) {

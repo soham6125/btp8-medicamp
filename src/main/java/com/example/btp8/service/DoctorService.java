@@ -157,7 +157,7 @@ public class DoctorService {
         return modelMapper.map(savedDoctor, DoctorResponseDto.class);
     }
 
-    public List<Doctor> getDcotorByCategory(String category) {
+    public List<Doctor> getDoctorByCategory(String category) {
         List<Doctor> allDoctors = doctorRepository.findDoctorByCategory(category);
         return allDoctors;
     }
