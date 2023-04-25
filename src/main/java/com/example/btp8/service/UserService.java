@@ -4,6 +4,8 @@ import com.example.btp8.dtos.AppointmentDto;
 import com.example.btp8.dtos.AppointmentResponseDto;
 import com.example.btp8.dtos.UserResponseDto;
 import com.example.btp8.exceptions.DoctorNotFoundException;
+import com.example.btp8.exceptions.InvalidCredentialsException;
+import com.example.btp8.exceptions.UserAlreadyExistsException;
 import com.example.btp8.exceptions.UserNotFoundException;
 import com.example.btp8.model.Appointment;
 import com.example.btp8.model.Doctor;
@@ -57,23 +59,23 @@ public class UserService {
         return modelMapper.map(user, UserResponseDto.class);
     }
 
-    public Page<User> findAllUsers(int page, int size, String email) {
-//        TODO: Change User to UserResponseDto
-        return userRepository.userFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
+    public Page<UserResponseDto> findAllUsers(int page, int size, String email) {
+        Page<User> users = userRepository.userFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
+        return users.map(user -> modelMapper.map(user, UserResponseDto.class));
     }
 
-    public UserResponseDto addUser(@Valid User user) throws Exception {
+    public UserResponseDto addUser(@Valid User user) {
 
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
         if (checkUser.isPresent()) {
-            throw new Exception("User with this email ID already exists");
+            throw new UserAlreadyExistsException("email");
         }
 
         String contact = user.getContact();
         Optional<User> checkUserContact = userRepository.findUserByContact(contact);
         if (checkUserContact.isPresent()) {
-            throw new Exception("User with this contact number already exists");
+            throw new UserAlreadyExistsException("contact number");
         }
 
         UUID randomUUID = UUID.randomUUID();
@@ -91,36 +93,28 @@ public class UserService {
         return modelMapper.map(savedUser, UserResponseDto.class);
     }
 
-    public UserResponseDto deleteUser(Long id) throws Exception {
-
-        Optional<User> user = userRepository.findById(id);
-        if (user.isEmpty()) {
-            throw new Exception("User with given ID does not exist");
-        }
-
-        User currentUser = user.get();
-        userRepository.delete(currentUser);
-        return modelMapper.map(currentUser, UserResponseDto.class);
+    public UserResponseDto deleteUser(Long id) {
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
+        userRepository.delete(user);
+        return modelMapper.map(user, UserResponseDto.class);
     }
 
-    public UserResponseDto editUser(Long id, @Valid User user) throws Exception {
-
+    public UserResponseDto editUser(Long id, @Valid User user) {
         User existingUser = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
 
+//        Validation checks
         String email = user.getEmail();
         Optional<User> checkUser = userRepository.findUserByEmail(email);
         if (checkUser.isPresent()) {
-            throw new Exception("User with this email ID already exists");
+            throw new UserAlreadyExistsException("email");
         }
-
         String contact = user.getContact();
         Optional<User> checkUserContact = userRepository.findUserByContact(contact);
         if (checkUserContact.isPresent()) {
-            throw new Exception("User with this contact number already exists");
+            throw new UserAlreadyExistsException("contact number");
         }
 
         utils.copyNonNullProperties(user, existingUser);
-
         if (user.getPassword() != null) {
             String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
             String hashPassword = utils.get_SHA_512_SecurePassword(user.getPassword(), currentTimestamp);
@@ -128,50 +122,26 @@ public class UserService {
             existingUser.setCreatedAt(currentTimestamp);
             existingUser.setPassword(hashPassword);
         }
-
         User savedUser = userRepository.save(existingUser);
         return modelMapper.map(savedUser, UserResponseDto.class);
     }
 
-    public User verifyUserLogin(Login loginBody) throws Exception {
-//        TODO: to change later
+    public UserResponseDto verifyUserLogin(Login loginBody) throws Exception {
         String contact = loginBody.getContact();
         String password = loginBody.getPassword();
-
+        User currentUser;
         if (contact != null) {
-
-            Optional<User> currentUser = userRepository.findUserByContact(contact);
-            if (currentUser.isEmpty()) {
-                throw new Exception("Invalid credentials");
-            }
-
-            String createdAtTimestamp = currentUser.get().getCreatedAt();
-            String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
-
-            if (newHash.equals(currentUser.get().getPassword())) {
-                return currentUser.get();
-            } else {
-                throw new Exception("Invalid credentials");
-            }
-
+            currentUser = userRepository.findUserByContact(contact).orElseThrow(InvalidCredentialsException::new);
         } else {
-
             String email = loginBody.getEmail();
-            Optional<User> currentUser = userRepository.findUserByEmail(email);
-
-            if (currentUser.isEmpty()) {
-                throw new Exception("Invalid credentials");
-            }
-
-            String createdAtTimestamp = currentUser.get().getCreatedAt();
-            String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
-
-            if (newHash.equals(currentUser.get().getPassword())) {
-                return currentUser.get();
-            } else {
-                throw new Exception("Invalid credentials");
-            }
-
+            currentUser = userRepository.findUserByEmail(email).orElseThrow(InvalidCredentialsException::new);
+        }
+        String createdAtTimestamp = currentUser.getCreatedAt();
+        String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
+        if (newHash.equals(currentUser.getPassword())) {
+            return modelMapper.map(currentUser, UserResponseDto.class);
+        } else {
+            throw new InvalidCredentialsException();
         }
     }
 

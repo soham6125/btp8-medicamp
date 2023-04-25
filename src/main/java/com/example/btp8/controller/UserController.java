@@ -6,7 +6,6 @@ import com.example.btp8.dtos.ErrorResponseDto;
 import com.example.btp8.dtos.UserResponseDto;
 import com.example.btp8.exceptions.DoctorNotFoundException;
 import com.example.btp8.exceptions.UserNotFoundException;
-import com.example.btp8.model.Appointment;
 import com.example.btp8.model.Login;
 import com.example.btp8.model.User;
 import com.example.btp8.service.UserService;
@@ -17,7 +16,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping(path = "/app/v1")
@@ -31,16 +31,14 @@ public class UserController {
     }
 
     @GetMapping("/health")
-    public ResponseEntity<Map<String, String>> health(){
+    public ResponseEntity<Map<String, String>> health() {
         return ResponseEntity.status(HttpStatus.OK).body(userService.healthCheck());
     }
 
     @GetMapping("/user/all")
-    public ResponseEntity<Map<String, Object>> findUserPaginated(@RequestParam(defaultValue = "0") int page,
-                                                                    @RequestParam(defaultValue = "5") int size,
-                                                                    @RequestParam(defaultValue = "") String email) {
+    public ResponseEntity<Map<String, Object>> findUserPaginated(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "5") int size, @RequestParam(defaultValue = "") String email) {
         Map<String, Object> response = new HashMap<>();
-        Page<User> userPaginated = userService.findAllUsers(page, size, email);
+        Page<UserResponseDto> userPaginated = userService.findAllUsers(page, size, email);
         response.put("data", userPaginated.getContent());
         response.put("currentPage", userPaginated.getNumber());
         response.put("totalItems", userPaginated.getTotalElements());
@@ -49,7 +47,7 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public ResponseEntity<UserResponseDto> getUser(@PathVariable("id") Long id){
+    public ResponseEntity<UserResponseDto> getUser(@PathVariable("id") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.findUser(id));
     }
 
@@ -69,7 +67,7 @@ public class UserController {
     }
 
     @PostMapping("/user/login")
-    public ResponseEntity<User> login(@Valid @RequestBody Login loginBody) throws Exception {
+    public ResponseEntity<UserResponseDto> login(@Valid @RequestBody Login loginBody) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(userService.verifyUserLogin(loginBody));
     }
 
