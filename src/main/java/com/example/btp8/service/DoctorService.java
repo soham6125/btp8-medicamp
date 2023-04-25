@@ -1,9 +1,14 @@
 package com.example.btp8.service;
 
+import com.example.btp8.dtos.DoctorResponseDto;
+import com.example.btp8.exceptions.DoctorAlreadyExistsException;
+import com.example.btp8.exceptions.DoctorNotFoundException;
+import com.example.btp8.exceptions.InvalidCredentialsException;
 import com.example.btp8.model.Doctor;
 import com.example.btp8.model.Login;
 import com.example.btp8.repository.DoctorRepository;
 import com.example.btp8.utils.utils;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -23,36 +28,36 @@ import static java.time.Period.between;
 public class DoctorService {
 
     private final DoctorRepository doctorRepository;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public DoctorService(DoctorRepository doctorRepository) {
+    public DoctorService(DoctorRepository doctorRepository, ModelMapper modelMapper) {
         this.doctorRepository = doctorRepository;
+        this.modelMapper = modelMapper;
     }
 
-    public Doctor findDoctorByID(Long id) {
-        Optional<Doctor> currentDoctor = doctorRepository.findById(id);
-        if (currentDoctor.isEmpty()) {
-            throw new RuntimeException("Doctor with ID " + id + " does not exist");
-        }
-        return currentDoctor.get();
+    public DoctorResponseDto findDoctorByID(Long id) {
+        Doctor currentDoctor = doctorRepository.findById(id).orElseThrow(() -> new DoctorNotFoundException(id));
+        return modelMapper.map(currentDoctor, DoctorResponseDto.class);
     }
 
-    public Page<Doctor> findAllDoctors(int page, int size, String email) {
-        return doctorRepository.docFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
+    public Page<DoctorResponseDto> findAllDoctors(int page, int size, String email) {
+        Page<Doctor> doctors = doctorRepository.docFilter(email, PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")));
+        return doctors.map(user -> modelMapper.map(user, DoctorResponseDto.class));
     }
 
-    public Doctor addDoctor(Doctor doctor) throws Exception {
+    public DoctorResponseDto addDoctor(Doctor doctor) throws Exception {
 
+//        Validations
         String email = doctor.getEmail();
         Optional<Doctor> checkDoctor = doctorRepository.findDoctorByEmail(email);
         if (checkDoctor.isPresent()) {
-            throw new Exception("Doctor with this email " + email + " already exists");
+            throw new DoctorAlreadyExistsException("email");
         }
-
         String contact = doctor.getContact();
         Optional<Doctor> checkDoctorContact = doctorRepository.findDoctorByContact(contact);
         if (checkDoctorContact.isPresent()) {
-            throw new Exception("User with this contact number already exists");
+            throw new DoctorAlreadyExistsException("contact number");
         }
 
         UUID randomUUID = UUID.randomUUID();
@@ -71,91 +76,66 @@ public class DoctorService {
 
         doctor.setTimeSlots(utils.getAllTimeSlots());
 
-        return doctorRepository.save(doctor);
+        Doctor savedDoctor = doctorRepository.save(doctor);
+        return modelMapper.map(savedDoctor, DoctorResponseDto.class);
     }
 
-    public Doctor deleteDoctor(Long id) throws Exception {
-        Optional<Doctor> doctor = doctorRepository.findById(id);
-        if (doctor.isEmpty()) {
-            throw new Exception("Doctor with given ID does not exist");
-        }
-
-        Doctor currentDoctor = doctor.get();
-        doctorRepository.delete(currentDoctor);
-        return currentDoctor;
+    public DoctorResponseDto deleteDoctor(Long id) throws Exception {
+        Doctor doctor = doctorRepository.findById(id).orElseThrow(() -> new DoctorNotFoundException(id));
+        doctorRepository.delete(doctor);
+        return modelMapper.map(doctor, DoctorResponseDto.class);
     }
 
-    public Doctor editDoctor(Long id, @Valid Doctor doctor) throws Exception {
+    public DoctorResponseDto editDoctor(Long id, @Valid Doctor doctor) throws Exception {
 
-        Optional<Doctor> existingDoctor = doctorRepository.findById(id);
-        if (existingDoctor.isEmpty()) {
-            throw new RuntimeException("Doctor with id " + id + " does not exist");
-        }
-
+        Doctor existingDoctor = doctorRepository.findById(id).orElseThrow(() -> new DoctorNotFoundException(id));
+//        Validations
         String email = doctor.getEmail();
         Optional<Doctor> checkDoctor = doctorRepository.findDoctorByEmail(email);
         if (checkDoctor.isPresent()) {
-            throw new Exception("User with this email ID already exists");
+            throw new DoctorAlreadyExistsException("email");
         }
-
         String contact = doctor.getContact();
         Optional<Doctor> checkDoctorContact = doctorRepository.findDoctorByContact(contact);
         if (checkDoctorContact.isPresent()) {
-            throw new Exception("User with this contact number already exists");
+            throw new DoctorAlreadyExistsException("contact number");
         }
 
-        Doctor currentDoctor = existingDoctor.get();
-        utils.copyNonNullProperties(doctor, currentDoctor);
+        utils.copyNonNullProperties(doctor, existingDoctor);
 
         if (doctor.getPassword() != null) {
             String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
             String hashPassword = utils.get_SHA_512_SecurePassword(doctor.getPassword(), currentTimestamp);
             System.out.println("hash => " + hashPassword);
-            currentDoctor.setCreatedAt(currentTimestamp);
-            currentDoctor.setPassword(hashPassword);
+            existingDoctor.setCreatedAt(currentTimestamp);
+            existingDoctor.setPassword(hashPassword);
         }
 
-        return doctorRepository.save(currentDoctor);
+        Doctor savedDoctor = doctorRepository.save(existingDoctor);
+        return modelMapper.map(savedDoctor, DoctorResponseDto.class);
     }
 
-    public Doctor verifyDoctorLogin(Login loginBody) throws Exception {
+    public DoctorResponseDto verifyDoctorLogin(Login loginBody) throws Exception {
         String contact = loginBody.getContact();
         String password = loginBody.getPassword();
+        Doctor doctor;
         if (contact != null) {
-
-            Optional<Doctor> currentDoctor = doctorRepository.findDoctorByContact(contact);
-            if (currentDoctor.isEmpty()) {
-                throw new Exception("Invalid credentials");
-            }
-
-            String createdAtTimestamp = currentDoctor.get().getCreatedAt();
-            String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
-            if (newHash.equals(currentDoctor.get().getPassword())) {
-                return currentDoctor.get();
-            } else {
-                throw new Exception("Invalid credentials");
-            }
-
+            doctor = doctorRepository.findDoctorByContact(contact).orElseThrow(InvalidCredentialsException::new);
         } else {
-
             String email = loginBody.getEmail();
-            Optional<Doctor> currentDoctor = doctorRepository.findDoctorByEmail(email);
-            if (currentDoctor.isEmpty()) {
-                throw new Exception("Invalid credentials");
-            }
+            doctor = doctorRepository.findDoctorByEmail(email).orElseThrow(InvalidCredentialsException::new);
+        }
 
-            String createdAtTimestamp = currentDoctor.get().getCreatedAt();
-            String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
-            if (newHash.equals(currentDoctor.get().getPassword())) {
-                return currentDoctor.get();
-            } else {
-                throw new Exception("Invalid credentials");
-            }
-
+        String createdAtTimestamp = doctor.getCreatedAt();
+        String newHash = utils.get_SHA_512_SecurePassword(password, createdAtTimestamp);
+        if (newHash.equals(doctor.getPassword())) {
+            return modelMapper.map(doctor, DoctorResponseDto.class);
+        } else {
+            throw new InvalidCredentialsException();
         }
     }
 
-    public Doctor updateAppointment(Long id, String time) throws Exception {
+    public DoctorResponseDto updateAppointment(Long id, String time) throws Exception {
         Doctor doctor = doctorRepository.findById(id).orElseThrow(() -> new Exception("Doctor not Found"));
         List<String> timeslots = doctor.getTimeSlots();
         String found = null;
@@ -172,6 +152,7 @@ public class DoctorService {
         }
         System.out.println(timeslots);
         doctor.setTimeSlots(timeslots);
-        return doctorRepository.save(doctor);
+        Doctor savedDoctor = doctorRepository.save(doctor);
+        return modelMapper.map(savedDoctor, DoctorResponseDto.class);
     }
 }

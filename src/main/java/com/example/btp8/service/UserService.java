@@ -39,13 +39,15 @@ public class UserService {
     private final DoctorRepository doctorRepository;
     private final AppointmentRepository appointmentRepository;
     private final ModelMapper modelMapper;
+    private final DoctorService doctorService;
 
     @Autowired
-    public UserService(UserRepository userRepository, DoctorRepository doctorRepository, AppointmentRepository appointmentRepository, ModelMapper modelMapper) {
+    public UserService(UserRepository userRepository, DoctorRepository doctorRepository, AppointmentRepository appointmentRepository, ModelMapper modelMapper, DoctorService doctorService) {
         this.userRepository = userRepository;
         this.doctorRepository = doctorRepository;
         this.appointmentRepository = appointmentRepository;
         this.modelMapper = modelMapper;
+        this.doctorService = doctorService;
     }
 
     public Map<String, String> healthCheck() {
@@ -154,6 +156,11 @@ public class UserService {
         String currentTimestamp = String.valueOf(Instant.now().toEpochMilli());
         appointment.setCreatedAt(currentTimestamp);
         Appointment savedAppointment = appointmentRepository.save(appointment);
+        try {
+            doctorService.updateAppointment(doctor.getId(), savedAppointment.getTimeSlot());
+        } catch (Exception e) {
+            throw new DoctorNotFoundException(doctor.getId());
+        }
         return modelMapper.map(savedAppointment, AppointmentResponseDto.class);
     }
 }

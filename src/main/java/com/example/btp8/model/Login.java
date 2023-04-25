@@ -21,8 +21,6 @@ public class Login {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotNull
-    private boolean isContact;
     @Null
     private String contact;
     @Null

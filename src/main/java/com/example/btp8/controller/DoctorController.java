@@ -1,5 +1,9 @@
 package com.example.btp8.controller;
 
+import com.example.btp8.dtos.DoctorResponseDto;
+import com.example.btp8.dtos.ErrorResponseDto;
+import com.example.btp8.exceptions.DoctorNotFoundException;
+import com.example.btp8.exceptions.UserNotFoundException;
 import com.example.btp8.model.Doctor;
 import com.example.btp8.model.Login;
 import com.example.btp8.service.DoctorService;
@@ -24,10 +28,10 @@ public class DoctorController {
 
     @GetMapping("/doctor/all")
     public ResponseEntity<Map<String, Object>> findDoctorPaginated(@RequestParam(defaultValue = "0") int page,
-                                                                    @RequestParam(defaultValue = "5") int size,
-                                                                    @RequestParam(defaultValue = "") String email) {
+                                                                   @RequestParam(defaultValue = "5") int size,
+                                                                   @RequestParam(defaultValue = "") String email) {
         Map<String, Object> response = new HashMap<>();
-        Page<Doctor> doctorPaginated = doctorService.findAllDoctors(page, size, email);
+        Page<DoctorResponseDto> doctorPaginated = doctorService.findAllDoctors(page, size, email);
         response.put("data", doctorPaginated.getContent());
         response.put("currentPage", doctorPaginated.getNumber());
         response.put("totalItems", doctorPaginated.getTotalElements());
@@ -36,33 +40,41 @@ public class DoctorController {
     }
 
     @GetMapping("/doctor/{id}")
-    public ResponseEntity<Doctor> getDoctor(@PathVariable("id") Long id){
+    public ResponseEntity<DoctorResponseDto> getDoctor(@PathVariable("id") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.findDoctorByID(id));
     }
 
     @PostMapping("/doctor")
-    public ResponseEntity<Doctor> addDoctor(@Valid @RequestBody Doctor doctor) throws Exception {
+    public ResponseEntity<DoctorResponseDto> addDoctor(@Valid @RequestBody Doctor doctor) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.addDoctor(doctor));
     }
 
     @DeleteMapping("/doctor/{id}")
-    public ResponseEntity<Doctor> deleteDoctor(@PathVariable("id") Long id) throws Exception {
+    public ResponseEntity<DoctorResponseDto> deleteDoctor(@PathVariable("id") Long id) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.deleteDoctor(id));
     }
 
     @PatchMapping("/doctor/{id}")
-    public ResponseEntity<Doctor> updateDoctor(@PathVariable("id") Long id, @Valid @RequestBody Doctor doctor) throws Exception {
+    public ResponseEntity<DoctorResponseDto> updateDoctor(@PathVariable("id") Long id, @Valid @RequestBody Doctor doctor) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.editDoctor(id, doctor));
     }
 
     @PatchMapping("/doctor/{id}/appointment")
-    public ResponseEntity<Doctor> updateTimeSlots(@PathVariable("id") Long id, @RequestBody String timeslot) throws Exception {
+    public ResponseEntity<DoctorResponseDto> updateTimeSlots(@PathVariable("id") Long id, @RequestBody String timeslot) throws Exception {
         System.out.println(timeslot);
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.updateAppointment(id, timeslot));
     }
 
     @PostMapping("/doctor/login")
-    public ResponseEntity<Doctor> login(@Valid @RequestBody Login loginBody) throws Exception {
+    public ResponseEntity<DoctorResponseDto> login(@Valid @RequestBody Login loginBody) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.verifyDoctorLogin(loginBody));
+    }
+
+    @ExceptionHandler({IllegalArgumentException.class, DoctorNotFoundException.class})
+    public ResponseEntity<ErrorResponseDto> handleExceptions(Exception e) {
+        if (e instanceof DoctorNotFoundException) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorResponseDto(e.getMessage()));
+        }
+        return ResponseEntity.badRequest().body(new ErrorResponseDto(e.getMessage()));
     }
 }

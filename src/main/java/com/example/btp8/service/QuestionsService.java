@@ -13,8 +13,7 @@ public class QuestionsService {
 
     public Object retrieveQuestions(String category) throws IOException, ParseException {
         JSONParser jsonParser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("C:\\Users\\SOHAM\\Desktop\\btp8\\btp8\\src\\main\\java\\com\\example\\btp8\\Questions.json"));
-        Object res = jsonObject.get(category);
-        return res;
+        JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("src/main/java/com/example/btp8/Questions.json"));
+        return jsonObject.get(category);
     }
 }
