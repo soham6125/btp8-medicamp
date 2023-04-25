@@ -4,6 +4,7 @@ import com.example.btp8.dtos.DoctorResponseDto;
 import com.example.btp8.exceptions.DoctorAlreadyExistsException;
 import com.example.btp8.exceptions.DoctorNotFoundException;
 import com.example.btp8.exceptions.InvalidCredentialsException;
+import com.example.btp8.model.Associate;
 import com.example.btp8.model.Doctor;
 import com.example.btp8.model.Login;
 import com.example.btp8.repository.DoctorRepository;
@@ -154,5 +155,10 @@ public class DoctorService {
         doctor.setTimeSlots(timeslots);
         Doctor savedDoctor = doctorRepository.save(doctor);
         return modelMapper.map(savedDoctor, DoctorResponseDto.class);
+    }
+
+    public List<Doctor> getDcotorByCategory(String category) {
+        List<Doctor> allDoctors = doctorRepository.findDoctorByCategory(category);
+        return allDoctors;
     }
 }
