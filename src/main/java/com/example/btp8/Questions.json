@@ -1405,12 +1405,1556 @@
       ]
     }
   ],
-  "psychosis": [],
-  "stress": [],
-  "drug_addiction": [],
-  "sex_addiction": [],
-  "internet_addiction": [],
-  "borderline_personality_disorder": [],
-  "sleep_disorder": [],
-  "schizophrenia": []
+  "psychosis": [
+    {
+      "id": 1,
+      "question": "Do you ever see or hear things that other people cannot see or hear?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Have you ever believed that someone was reading your thoughts or controlling your actions?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Have you ever felt that you had special powers or abilities that others do not have?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Have you ever felt that you were being followed, watched, or persecuted?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Have you ever had thoughts that were not your own or that did not make sense?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Do you ever feel that you are being controlled by outside forces, such as aliens or the government?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Have you ever had a sense that you were meant to do something important, such as save the world or prevent a disaster?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "stress": [
+    [
+      {
+        "id": 1,
+        "question": "In the past month, how often have you felt nervous or anxious?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "In the past month, how often have you felt irritable or easily angered?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "In the past month, how often have you felt overwhelmed or like you couldn't cope with things?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "In the past month, how often have you felt like you were under a lot of pressure?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "In the past month, how often have you had trouble sleeping because you were worrying about things?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "In the past month, how often have you felt exhausted or burned out?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "In the past month, how often have you felt like you couldn't relax or calm down?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "In the past month, how often have you had headaches, muscle tension, or other physical symptoms related to stress?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "In the past month, how often have you turned to alcohol, drugs, or other substances to help you deal with stress?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "In the past month, how often have you felt like you didn't have anyone to talk to or rely on for support?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "In the past month, how often have you felt like your stress was affecting your relationships with others?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "In the past month, how often have you felt like you were having trouble concentrating or focusing because of stress?",
+        "options": [
+          {
+            "answer": "Never",
+            "score": 0
+          },
+          {
+            "answer": "Rarely",
+            "score": 1
+          },
+          {
+            "answer": "Sometimes",
+            "score": 2
+          },
+          {
+            "answer": "Often",
+            "score": 3
+          }
+        ]
+      }
+    ]
+  ],
+  "drug_addiction": [
+    {
+      "id": 1,
+      "question": "Have you ever used drugs more than once in a week?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Have you ever had trouble with the law due to drug use?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Have you ever stolen money or property to buy drugs?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Have you ever continued to use drugs despite negative consequences such as job loss, relationship problems, or health issues?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Have you ever tried to quit or cut down on drug use but failed?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Have you ever experienced withdrawal symptoms when trying to stop using drugs?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Have you ever prioritized drug use over important obligations such as work, school, or family?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Have you ever borrowed or stolen drugs from someone else?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Have you ever lied to friends or family members about your drug use?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Have you ever experienced financial problems due to drug use?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes",
+          "score": 1
+        }
+      ]
+    }
+  ],
+  "sex_addiction": [
+    {
+      "id": 1,
+      "question": "Do you spend a lot of time thinking about sex or planning sexual activities?",
+      "options": [
+        {
+          "answer": "Rarely",
+          "score": 0
+        },
+        {
+          "answer": "Sometimes",
+          "score": 1
+        },
+        {
+          "answer": "Frequently",
+          "score": 2
+        },
+        {
+          "answer": "Almost constantly",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Have you ever felt out of control with your sexual behavior?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes, but it's rare",
+          "score": 1
+        },
+        {
+          "answer": "Yes, sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Yes, often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Have you ever tried to stop engaging in sexual behavior but been unsuccessful?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes, but I wasn't trying very hard",
+          "score": 1
+        },
+        {
+          "answer": "Yes, I tried my best but couldn't stop",
+          "score": 2
+        },
+        {
+          "answer": "Yes, and I sought professional help but still couldn't stop",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Have you ever jeopardized a relationship or lost a job because of your sexual behavior?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes, but it was a minor issue",
+          "score": 1
+        },
+        {
+          "answer": "Yes, and it was a significant problem",
+          "score": 2
+        },
+        {
+          "answer": "Yes, and it was a major crisis",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Do you feel guilty or ashamed after engaging in sexual behavior?",
+      "options": [
+        {
+          "answer": "No, I don't feel guilty or ashamed",
+          "score": 0
+        },
+        {
+          "answer": "Sometimes, but it doesn't bother me much",
+          "score": 1
+        },
+        {
+          "answer": "Often, and it bothers me a lot",
+          "score": 2
+        },
+        {
+          "answer": "Almost always, and it causes me significant distress",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Have you ever engaged in sexual behavior despite it being risky or unsafe?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes, but it was a one-time thing",
+          "score": 1
+        },
+        {
+          "answer": "Yes, and it's happened more than once",
+          "score": 2
+        },
+        {
+          "answer": "Yes, and I continue to do it despite the risks",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Do you find that your sexual behavior interferes with your daily life or responsibilities?",
+      "options": [
+        {
+          "answer": "No, it doesn't interfere",
+          "score": 0
+        },
+        {
+          "answer": "Sometimes, but I can manage it",
+          "score": 1
+        },
+        {
+          "answer": "Often, and it causes problems",
+          "score": 2
+        },
+        {
+          "answer": "Almost always, and it's a major issue",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Have you ever had legal problems as a result of your sexual behavior?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Yes, but it was a minor legal issue",
+          "score": 1
+        },
+        {
+          "answer": "Yes, and it was a significant legal problem",
+          "score": 2
+        },
+        {
+          "answer": "Yes, and it resulted in a criminal record",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Do you feel like you need to engage in sexual behavior to cope with stress or negative emotions?",
+      "options": [
+        {
+          "answer": "No, I don't use sex as a coping mechanism",
+          "score": 0
+        },
+        {
+          "answer": "Sometimes, but it's not a big deal",
+          "score": 1
+        },
+        {
+          "answer": "Often, and it's a significant coping mechanism for me",
+          "score": 2
+        },
+        {
+          "answer": "Almost always, and I can't cope without it",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Do you have trouble controlling your sexual urges or impulses?",
+      "options": [
+        {
+          "answer": "No, I have good control over my sexual behavior",
+          "score": 0
+        },
+        {
+          "answer": "Sometimes, but it's not a major issue",
+          "score": 1
+        },
+        {
+          "answer": "Often, and it's a significant problem",
+          "score": 2
+        },
+        {
+          "answer": "Almost always, and I feel completely out of control",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "internet_addiction": [
+    {
+      "id": 1,
+      "question": "How often do you find yourself spending more time online than you had originally intended?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Have you ever tried to cut back on your internet use and failed?",
+      "options": [
+        {
+          "answer": "No",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How often do you find yourself checking your phone or computer for notifications, even when you know there are no new messages or alerts?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How often do you neglect other responsibilities or activities in favor of spending time online?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How often do you feel irritable or moody when you are unable to access the internet?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How often do you use the internet as a way to escape from negative emotions such as anxiety or depression?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How often do you find yourself spending more time on social media than you had originally intended?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Do you feel restless or irritable when you try to reduce your internet use?",
+      "options": [
+        {
+          "answer": "Never",
+          "score": 0
+        },
+        {
+          "answer": "Rarely",
+          "score": 1
+        },
+        {
+          "answer": "Sometimes",
+          "score": 2
+        },
+        {
+          "answer": "Often",
+          "score": 3
+        }
+      ]
+    }
+  ],
+  "borderline_personality_disorder": [
+    {
+      "id": 1,
+      "question": "Do you have a persistent fear of abandonment or rejection, even when there is no evidence of this?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Do you have a pattern of unstable and intense relationships, characterized by idealization and devaluation?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Do you experience identity disturbance, such as uncertainty about your goals, values, or career path?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Do you engage in impulsive and risky behaviors, such as substance abuse, reckless driving, or unprotected sex?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Do you engage in self-harm or suicidal behaviors, or have recurrent suicidal thoughts?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Do you experience chronic feelings of emptiness or boredom?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Do you have intense and inappropriate anger or difficulty controlling anger?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Do you experience dissociative symptoms, such as feeling detached from yourself or your surroundings?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Do you have transient, stress-related paranoid ideation or severe dissociative symptoms?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Do you have a history of intense and unstable moods or emotional reactivity, such as frequent mood swings or emotional overreactions?",
+      "options": [
+        {
+          "answer": "Yes",
+          "score": 1
+        },
+        {
+          "answer": "No",
+          "score": 0
+        }
+      ]
+    }
+  ],
+  "sleep_disorder": [
+    {
+      "id": 1,
+      "question": "How often do you have trouble falling asleep?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How often do you wake up during the night and have trouble getting back to sleep?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How often do you wake up earlier than you would like and are unable to fall back asleep?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How often do you feel tired or groggy during the day?",
+      "options": [
+        {
+          "answer": "Almost every day",
+          "score": 3
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Less than half the days",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How often do you have trouble concentrating during the day due to lack of sleep?",
+      "options": [
+        {
+          "answer": "Almost every day",
+          "score": 3
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Less than half the days",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How often do you have trouble staying awake during the day?",
+      "options": [
+        {
+          "answer": "Almost every day",
+          "score": 3
+        },
+        {
+          "answer": "More than half the days",
+          "score": 2
+        },
+        {
+          "answer": "Less than half the days",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How often do you snore loudly or feel short of breath while sleeping?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How often do you experience leg movements or discomfort during sleep?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How often do you have vivid or disturbing dreams?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "How often do you feel anxious or worried about getting enough sleep?",
+      "options": [
+        {
+          "answer": "Almost every night",
+          "score": 3
+        },
+        {
+          "answer": "More than once a week",
+          "score": 2
+        },
+        {
+          "answer": "Once a week",
+          "score": 1
+        },
+        {
+          "answer": "Rarely or never",
+          "score": 0
+        }
+      ]
+    }
+  ],
+  "schizophrenia": [
+    {
+      "id": 1,
+      "question": "Do you experience hallucinations, such as hearing voices or seeing things that aren't there?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Do you experience delusions, such as beliefs that are not based in reality, such as thinking you are being followed or that you have special powers?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Do you feel like your thoughts are being controlled or interfered with by an outside force?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Do you experience disorganized speech or behavior, such as jumping between topics or exhibiting odd or repetitive movements?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Have you noticed a decline in your ability to function in your daily life, such as difficulty maintaining relationships, performing at work or school, or engaging in self-care activities?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Do you feel like you are disconnected from your emotions, or that your emotions are flat or dull?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Have you experienced significant changes in your sleeping patterns, such as difficulty falling or staying asleep, or sleeping too much?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Have you experienced a decrease in your motivation or interest in activities that you used to enjoy?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Do you feel like you are being followed or watched by others, or that people are talking about you behind your back?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Do you experience difficulty with concentration or focus?",
+      "options": [
+        {
+          "score": 0,
+          "answer": "No"
+        },
+        {
+          "score": 1,
+          "answer": "Rarely"
+        },
+        {
+          "score": 2,
+          "answer": "Sometimes"
+        },
+        {
+          "score": 3,
+          "answer": "Often"
+        }
+      ]
+    }
+  ]
 }

@@ -2,7 +2,6 @@ package com.example.btp8.repository;
 
 import com.example.btp8.model.Associate;
 import com.example.btp8.model.Doctor;
-import com.example.btp8.model.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.JpaRepository;

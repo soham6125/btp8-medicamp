@@ -45,17 +45,17 @@ public class DoctorController {
     }
 
     @PostMapping("/doctor")
-    public ResponseEntity<DoctorResponseDto> addDoctor(@Valid @RequestBody Doctor doctor) throws Exception {
+    public ResponseEntity<DoctorResponseDto> addDoctor(@Valid @RequestBody Doctor doctor) {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.addDoctor(doctor));
     }
 
     @DeleteMapping("/doctor/{id}")
-    public ResponseEntity<DoctorResponseDto> deleteDoctor(@PathVariable("id") Long id) throws Exception {
+    public ResponseEntity<DoctorResponseDto> deleteDoctor(@PathVariable("id") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.deleteDoctor(id));
     }
 
     @PatchMapping("/doctor/{id}")
-    public ResponseEntity<DoctorResponseDto> updateDoctor(@PathVariable("id") Long id, @Valid @RequestBody Doctor doctor) throws Exception {
+    public ResponseEntity<DoctorResponseDto> updateDoctor(@PathVariable("id") Long id, @Valid @RequestBody Doctor doctor) {
         return ResponseEntity.status(HttpStatus.OK).body(doctorService.editDoctor(id, doctor));
     }
 
