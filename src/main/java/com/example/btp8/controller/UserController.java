@@ -52,17 +52,17 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public ResponseEntity<UserResponseDto> addUser(@Valid @RequestBody User user) throws Exception {
+    public ResponseEntity<UserResponseDto> addUser(@Valid @RequestBody User user) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.addUser(user));
     }
 
     @DeleteMapping("/user/{id}")
-    public ResponseEntity<UserResponseDto> deleteUser(@PathVariable("id") Long id) throws Exception {
+    public ResponseEntity<UserResponseDto> deleteUser(@PathVariable("id") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.deleteUser(id));
     }
 
     @PatchMapping("/user/{id}")
-    public ResponseEntity<UserResponseDto> updateUser(@PathVariable("id") Long id, @Valid @RequestBody User user) throws Exception {
+    public ResponseEntity<UserResponseDto> updateUser(@PathVariable("id") Long id, @Valid @RequestBody User user) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.editUser(id, user));
     }
 

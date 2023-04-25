@@ -34,7 +34,7 @@ public class AnswerController {
 
     @PostMapping("/answer")
     public ResponseEntity<List<Associate>> addAnswerOfUser(@RequestBody @Valid Answer answerBody) {
-        Answer currentAnswer = answerService.addAnswer(answerBody);
+        answerService.addAnswer(answerBody);
         List<Associate> associates = associateService.getAssociateByCategory(answerBody.getCategory());
         return ResponseEntity.status(HttpStatus.OK).body(associates);
     }

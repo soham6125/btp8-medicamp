@@ -46,7 +46,7 @@ public class DoctorService {
         return doctors.map(user -> modelMapper.map(user, DoctorResponseDto.class));
     }
 
-    public DoctorResponseDto addDoctor(Doctor doctor) throws Exception {
+    public DoctorResponseDto addDoctor(Doctor doctor) {
 
 //        Validations
         String email = doctor.getEmail();
@@ -80,13 +80,13 @@ public class DoctorService {
         return modelMapper.map(savedDoctor, DoctorResponseDto.class);
     }
 
-    public DoctorResponseDto deleteDoctor(Long id) throws Exception {
+    public DoctorResponseDto deleteDoctor(Long id) {
         Doctor doctor = doctorRepository.findById(id).orElseThrow(() -> new DoctorNotFoundException(id));
         doctorRepository.delete(doctor);
         return modelMapper.map(doctor, DoctorResponseDto.class);
     }
 
-    public DoctorResponseDto editDoctor(Long id, @Valid Doctor doctor) throws Exception {
+    public DoctorResponseDto editDoctor(Long id, @Valid Doctor doctor) {
 
         Doctor existingDoctor = doctorRepository.findById(id).orElseThrow(() -> new DoctorNotFoundException(id));
 //        Validations
