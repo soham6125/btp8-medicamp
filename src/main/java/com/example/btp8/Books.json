@@ -1,0 +1,174 @@
+{
+  "anxiety": [
+    {
+      "id": 1,
+      "name": "\"The Anxiety and Phobia Workbook\" by Edmund J. Bourne",
+      "link": "https://www.amazon.com/Anxiety-Phobia-Workbook-Edmund-Bourne/dp/1626252157"
+    },
+    {
+      "id": 2,
+      "name": "\"The Worry Trick: How Your Brain Tricks You into Expecting the Worst and What You Can Do About It\" by David A. Carbonell",
+      "link": "https://www.amazon.com/Worry-Trick-Your-Brain-Expecting-ebook/dp/B019CGXUAW"
+    }
+  ],
+  "depression": [
+  {
+    "id": 1,
+    "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns",
+    "link": "https://www.amazon.com/dp/B009UW5X4C/"
+  },
+  {
+    "id": 2,
+    "name": "\"Reasons to Stay Alive\" by Matt Haig\n",
+    "link": "https://www.amazon.com/dp/B00R1M4ZBM/"
+  }
+],,
+  "ocd": [
+    {
+      "id": 1,
+      "name": "\"Brain Lock: Free Yourself from Obsessive-Compulsive Behavior\" by Jeffrey M. Schwartz\n",
+      "link": "https://www.amazon.com/Brain-Lock-Yourself-Obsessive-Compulsive-Behavior/dp/0060987111"
+    },
+    {
+      "id": 2,
+      "name": "\"The OCD Workbook: Your Guide to Breaking Free from Obsessive-Compulsive Disorder\" by Bruce M. Hyman and Cherry Pedrick\n",
+      "link": "https://www.amazon.com/OCD-Workbook-Breaking-Obsessive-Compulsive-Disorder/dp/1572249218"
+    }
+  ],
+  "adult_adhd": [
+    {
+      "id": 1,
+      "name": "\"Taking Charge of Adult ADHD\" by Russell A. Barkley\n",
+      "link": "https://www.amazon.com/Taking-Charge-Adult-ADHD-Third/dp/1462537976"
+    },
+    {
+      "id": 2,
+      "name": "\"The Smart but Scattered Guide to Success: How to Use Your Brain's Executive Skills to Keep Up, Stay Calm, and Get Organized at Work and at Home\" by Peg Dawson and Richard Guare\n",
+      "link": "https://www.amazon.com/Smart-But-Scattered-Guide-Success/dp/1462516962"
+    }
+  ],
+  "ptsd": [
+    {
+      "id": 1,
+      "name": "\"The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma\" by Bessel van der Kolk",
+      "link": "https://www.amazon.com/Body-Keeps-Score-Healing-Trauma/dp/0143127748"
+    },
+    {
+      "id": 2,
+      "name": "\"Complex PTSD: From Surviving to Thriving: A Guide and Map for Recovering from Childhood Trauma\" by Pete Walker",
+      "link": "https://www.amazon.com/Complex-PTSD-Surviving-RECOVERING-CHILDHOOD-ebook/dp/B00HJBMDXK"
+    }
+  ],
+  "narcissistic_personality_disorder": [
+    {
+      "id": 1,
+      "name": "\"Disarming the Narcissist: Surviving and Thriving with the Self-Absorbed\" by Wendy T. Behary\n",
+      "link": "https://www.amazon.com/Disarming-Narcissist-Surviving-Thriving-Self-Absorbed/dp/1608827607"
+    },
+    {
+      "id": 2,
+      "name": "\"The Narcissistic Family: Diagnosis and Treatment\" by Stephanie Donaldson-Pressman and Robert M. Pressman\n",
+      "link": "https://www.amazon.com/Narcissistic-Family-Diagnosis-Treatment-Pressman/dp/0787908703"
+    }
+  ],
+  "bipolar_disorder": [
+    {
+      "id": 1,
+      "name": "\"An Unquiet Mind: A Memoir of Moods and Madness\" by Kay Redfield Jamison\n",
+      "link": "https://www.amazon.com/Unquiet-Mind-Memoir-Moods-Madness-ebook/dp/B000SEH7ZO"
+    },
+    {
+      "id": 2,
+      "name": "\"The Bipolar Disorder Survival Guide: What You and Your Family Need to Know\" by David J. Miklowitz\n",
+      "link": "https://www.amazon.in/Bipolar-Disorder-Survival-Guide-Third/dp/1462537278"
+    }
+  ],
+  "psychosis": [
+    {
+      "id": 1,
+      "name": "\"Surviving Schizophrenia: A Family Manual\" by E. Fuller Torrey\n",
+      "link": "https://www.amazon.in/Surviving-Schizophrenia-Family-Fuller-Torrey/dp/0062268856"
+    },
+    {
+      "id": 2,
+      "name": "\"The Center Cannot Hold: My Journey Through Madness\" by Elyn R. Saks\n",
+      "link": "https://www.amazon.com/Center-Cannot-Hold-Journey-Through/dp/1401309445"
+    }
+  ],
+  "stress": [
+    {
+      "id": 1,
+      "name": "\"The Relaxation Response\" by Herbert Benson and Miriam Z. Klipper",
+      "link": "https://www.amazon.in/Relaxation-Response-Herbert-Benson-M-D/dp/0380006766"
+    },
+    {
+      "id": 2,
+      "name": "\"Why Zebras Don't Get Ulcers\" by Robert M. Sapolsky",
+      "link": "https://www.amazon.in/Why-Zebras-Dont-Ulcers-Stress-Related/dp/0805073698"
+    }
+  ],
+  "drug_addiction": [
+    {
+      "id": 1,
+      "name": "\"The Recovery Book: Answers to All Your Questions About Addiction and Alcoholism and Finding Health and Happiness in Sobriety\" by Al J. Mooney, Howard Eisenberg, and Catherine Dold",
+      "link": "https://www.amazon.in/Recovery-Book-Questions-Addiction-Alcoholism/dp/076117611X"
+    },
+    {
+      "id": 2,
+      "name": "\"Unbroken Brain: A Revolutionary New Way of Understanding Addiction\" by Maia Szalavitz",
+      "link": "https://www.amazon.in/Unbroken-Brain-Revolutionary-Understanding-Addiction-ebook/dp/B014PF3P84"
+    }
+  ],
+  "sex_addiction": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "internet_addiction": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "borderline_personality_disorder": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "sleep_disorder": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "schizophrenia": [
+    {
+      "id": 1,
+      "name": "\"Surviving Schizophrenia: A Family Manual\" by E. Fuller Torrey\n",
+      "link": "https://www.amazon.in/Surviving-Schizophrenia-Family-Fuller-Torrey/dp/0062268856"
+    },
+    {
+      "id": 2,
+      "name": "\"The Center Cannot Hold: My Journey Through Madness\" by Elyn R. Saks\n",
+      "link": "https://www.amazon.com/Center-Cannot-Hold-Journey-Through/dp/1401309445"
+    }
+  ]
+}

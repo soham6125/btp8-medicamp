@@ -1,0 +1,172 @@
+{
+  "anxiety": [
+    {
+      "id": 1,
+      "name": "\"Cognitive Behavioral Therapy for Anxiety Disorders: An Overview\" by Stefan G. Hofmann, PhD",
+      "link": "https://www.amazon.com/Worry-Trick-Your-Brain-Expecting-ebook/dp/B019CGXUAW"
+    },
+    {
+      "id": 2,
+      "name": "\"The Science Behind Deep Breathing for Anxiety\" by Psychology Today\n",
+      "link": "https://www.psychologytoday.com/us/blog/in-practice/201607/the-science-behind-deep-breathing-anxiety"
+    }
+  ],
+  "depression": [
+    {
+      "id": 1,
+      "name": "\"Cognitive Behavioral Therapy for Depression: An Overview\" by Judith S. Beck, PhD.\n",
+      "link": "https://www.psychologytoday.com/us/therapy-types/cognitive-behavioral-therapy"
+    },
+    {
+      "id": 2,
+      "name": "\"Mindfulness Meditation for Anxiety: How It Works and Why It Helps\" by Verywell Mind\n",
+      "link": "https://www.verywellmind.com/mindfulness-meditation-for-anxiety-2584188"
+    }
+  ],
+  "ocd": [
+    {
+      "id": 1,
+      "name": "\"Cognitive Behavioral Therapy for Obsessive-Compulsive Disorder: An Overview\" by Jonathan S. Abramowitz, PhD\n",
+      "link": "https://iocdf.org/about-ocd/ocd-treatment/cognitive-behavioral-therapy/"
+    },
+    {
+      "id": 2,
+      "name": "\"How to Help Someone with OCD: A Guide for Family and Friends\" by Healthline\n",
+      "link": "https://www.healthline.com/health/how-to-help-someone-with-ocd"
+    }
+  ],
+  "adult_adhd": [
+    {
+      "id": 1,
+      "name": "\"Cognitive Behavioral Therapy for Adult ADHD: An Overview\" by J. Russell Ramsay, PhD\n",
+      "link": "https://www.additudemag.com/cognitive-behavioral-therapy-adult-adhd-overview/"
+    },
+    {
+      "id": 2,
+      "name": "\"The Relationship Between Nutrition and Adult ADHD\" by ADDitude Magazine",
+      "link": "https://www.additudemag.com/nutrition-adhd-symptoms-food-sensitivity-vitamins/"
+    }
+  ],
+  "ptsd": [
+    {
+      "id": 1,
+      "name": "\"Cognitive Behavioral Therapy for PTSD: An Overview\" by David Forbes, PhD\n",
+      "link": "https://www.psychologytoday.com/us/blog/fulfillment-any-age/201303/cognitive-behavioral-therapy-ptsd-overview"
+    },
+    {
+      "id": 2,
+      "name": "\"Eye Movement Desensitization and Reprocessing (EMDR) Therapy for PTSD\" by American Psychological Association",
+      "link": "https://www.apa.org/ptsd-guideline/treatments/eye-movement-reprocessing"
+    }
+  ],
+  "narcissistic_personality_disorder": [
+    {
+      "id": 1,
+      "name": "\"Narcissistic Personality Disorder: Treatment and Therapy Options\" by GoodTherapy",
+      "link": "https://www.goodtherapy.org/learn-about-therapy/issues/narcissistic-personality-disorder/treatment"
+    },
+    {
+      "id": 2,
+      "name": "\"Coping with Narcissistic Personality Disorder in Your Family\" by Psychology Today",
+      "link": "https://www.psychologytoday.com/us/blog/understanding-narcissism/202105/coping-narcissistic-personality-disorder-in-your-family"
+    }
+  ],
+  "bipolar_disorder": [
+    {
+      "id": 1,
+      "name": "\"Bipolar Disorder Treatment: An Overview\" by WebMD\n",
+      "link": "https://www.webmd.com/bipolar-disorder/guide/bipolar-disorder-treatment-overview"
+    },
+    {
+      "id": 2,
+      "name": "\"10 Natural Treatments for Bipolar Disorder Symptoms\" by Healthline\n",
+      "link": "https://www.healthline.com/health/bipolar-disorder/natural-treatments"
+    }
+  ],
+  "psychosis": [
+    {
+      "id": 1,
+      "name": "Cognitive Behavioral Therapy for Psychosis: An Overview\n",
+      "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007649/"
+    },
+    {
+      "id": 2,
+      "name": "Psychosis Treatment: What You Need to Know\n",
+      "link": "https://www.healthline.com/health/psychosis-treatment"
+    }
+  ],
+  "stress": [
+    {
+      "id": 1,
+      "name": "\"Stress Management: How to Reduce, Prevent, and Cope with Stress\" by HelpGuide",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "name": "\"10 Simple Ways to Relieve Stress\" by Healthline",
+      "link": ""
+    }
+  ],
+  "drug_addiction": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari",
+      "link": ""
+    }
+  ],
+  "sex_addiction": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "internet_addiction": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "borderline_personality_disorder": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "sleep_disorder": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ],
+  "schizophrenia": [
+    {
+      "id": 1,
+      "name": "\"Feeling Good: The New Mood Therapy\" by David D. Burns"
+    },
+    {
+      "id": 2,
+      "name": "\"Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions\" by Johann Hari"
+    }
+  ]
+}
