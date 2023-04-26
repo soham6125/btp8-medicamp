@@ -1,6 +1,8 @@
 package com.example.btp8.controller;
 
 import com.example.btp8.dtos.DoctorResponseDto;
+import com.example.btp8.dtos.ErrorResponseDto;
+import com.example.btp8.exceptions.DoctorNotFoundException;
 import com.example.btp8.model.Answer;
 import com.example.btp8.model.Associate;
 import com.example.btp8.model.Doctor;
@@ -44,7 +46,7 @@ public class AnswerController {
     }
 
     @PostMapping("/answer")
-    public ResponseEntity<Map<String, Object>> addAnswerOfUser(@RequestBody @Valid Answer answerBody) {
+    public ResponseEntity<Map<String, Object>> addAnswerOfUser(@RequestBody @Valid Answer answerBody) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(answerService.addAnswer(answerBody));
     }
 

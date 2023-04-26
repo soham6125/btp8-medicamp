@@ -5,10 +5,13 @@ import com.example.btp8.model.Answer;
 import com.example.btp8.model.Associate;
 import com.example.btp8.model.Doctor;
 import com.example.btp8.repository.AnswerRepository;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.FileReader;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
@@ -31,7 +34,12 @@ public class AnswerService {
         this.modelMapper = modelMapper;
     }
 
-    public Map<String, Object> addAnswer(Answer answer) {
+    public Map<String, Object> addAnswer(Answer answer) throws Exception {
+        Long maxScore = answer.getMaxScore();
+        Long score = answer.getScore();
+        if (score > maxScore) {
+            throw new Exception("Score can't exceed max score");
+        }
         Long currentTimestamp = Instant.now().toEpochMilli();
         answer.setCreatedAt(currentTimestamp);
         answerRepository.save(answer);
@@ -41,6 +49,16 @@ public class AnswerService {
         Map<String, Object> response = new HashMap<>();
         response.put("associates", associates);
         response.put("doctors", doctorResponse);
+
+        JSONParser jsonParser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("src/main/java/com/example/btp8/Books.json"));
+        Object books = jsonObject.get(answer.getCategory());
+        response.put("books", books);
+
+        JSONObject jsonObject2 = (JSONObject) jsonParser.parse(new FileReader("src/main/java/com/example/btp8/Articles.json"));
+        Object articles = jsonObject2.get(answer.getCategory());
+        response.put("articles", articles);
+
         return response;
     }
 
