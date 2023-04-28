@@ -19,7 +19,6 @@ public class Appointment {
     private User user;
     @NotNull
     @ManyToOne
-    @NotNull
     private Doctor doctor;
     @NotNull
     private String timeSlot;
